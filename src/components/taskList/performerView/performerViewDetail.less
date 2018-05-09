@@ -1,0 +1,61 @@
+.performerViewDetail {
+  padding: 14px 20px 0 18px;
+  background-color: #fff;
+  height: e("calc(100% - 14px)"); // 保留底部区域，对抗affix计算边界
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.taskTitle {
+  padding-bottom: 7px;
+  // height: 22px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #000;
+  border-bottom: 2px solid #ccc;
+  box-sizing: content-box;
+}
+.survey {
+  float: right;
+  color: #2782d7;
+}
+.serviceImplementation {
+  width: 100%;
+  margin-top: 25px;
+  overflow: hidden;
+}
+.listControl {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 16px;
+  height: 32px;
+  line-height: 32px;
+  .stateWidget {
+    justify-self: flex-start;
+    .label {
+      font-size: 14px;
+      color: #9b9b9b;
+    }
+    :global .ant-select .ant-select-selection {
+      border: 0;
+      background-color: transparent;
+      font-size: 14px;
+      color: #4a4a4a;
+      .ant-select-arrow:before {
+        top: 3px;
+      }
+    }
+  }
+  .total {
+    font-size: 14px;
+    color: #9b9b9b;
+    span {
+      color: #000;
+    }
+  }
+  .pagination {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+

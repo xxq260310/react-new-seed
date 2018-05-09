@@ -1,0 +1,40 @@
+// 清除浮动
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// 响应式图片
+.img-responsive(@display: block) {
+  display: @display;
+  max-width: 100%;
+  height: auto;
+}
+
+// 元素透明度兼容IE8
+.opacity(@opacity) {
+  opacity: @opacity;
+  // IE8 filter
+  @opacity-ie: (@opacity * 100);
+  filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
+// 超长部分文字显示省略号
+.text-overflow-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Reset filters for IE
+// When you need to remove a gradient background, do not forget to use this to reset
+// the IE filter for IE9 and below.
+.reset-filter() {
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+}

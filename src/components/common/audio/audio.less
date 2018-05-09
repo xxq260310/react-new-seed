@@ -1,0 +1,31 @@
+.audioContainer {
+  width: 100%;
+  min-width: 55px;
+  height: 100%;
+  min-height: 20px;
+  display: flex;
+  padding: 0 2px 0 7px;
+  align-items: center;
+  .audioControl {
+    display: flex;
+    align-items: center;
+  }
+  .audioProgress {
+    flex: 1;
+    :global {
+      .ant-slider {
+        margin: 6px;
+      }
+      .ant-slider-handle {
+        display: none;
+      }
+      .ant-slider-rail {
+        background: #d2d2d2;
+      }
+    }
+  }
+  .currentTime {
+    font-size: 8px;
+    padding: 0 3px;
+  }
+}

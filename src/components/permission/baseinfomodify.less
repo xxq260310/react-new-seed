@@ -1,0 +1,95 @@
+@import '../../css/variable.less';
+
+.baseInfo {
+	width: 100%;
+	height: auto;
+	margin-top: 19px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e9e9e9;
+  font-family: @font-family;
+  .inputComponent {
+    :global {
+      .ant-select {
+        border-radius: 4px;
+      }
+      .ant-select-selection__rendered {
+        width: 200px;
+        height: 32px;
+        font-size: 14px;
+      }
+      .ant-select-selection--single {
+        width: 200px;
+        height: 32px;
+      }
+    }
+  }
+}
+.inputComponent {
+	position: relative;
+	width: 313px;
+	height: 52px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.boxBorder {
+  width: 100%;
+  height: 100%;
+  // border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+.inputComponentTitle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 95px;
+	height: 32px;
+	line-height: 32px;
+	text-align: right;
+	color: #a1a1a1;
+	font-size: 14px;
+}
+.isRequired {
+	color: #ff4058;
+	margin-right: 5px;
+}
+.inputComponentContent {
+	width: 100%;
+	height: 100%;
+	padding-left: 113px;
+	box-sizing: border-box;
+}
+
+.result {
+  flex: display;
+  display: -webkit-flex; /* Safari */
+  align-items: center;
+  height: 32px;
+  line-height: 32px;
+  .nameLabel {
+    font-family: inherit;
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+  .custIdLabel {
+    font-family: inherit;
+    font-size: 14px;
+    color: #999;
+    margin-left: 8px;
+  }
+  .iconDiv {
+    margin-left: 12px;
+    border: 1px solid #ddd;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: -1px;
+    .closeIcon {
+      position: relative;
+      top: -10px;
+      left: -1px;
+      font-size: 16px;
+      color: #4a90e2;
+      font-weight: 600;
+    }
+  }
+}

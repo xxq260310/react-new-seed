@@ -1,0 +1,42 @@
+.custRang {
+  width: 192px;
+	height: 24px;
+	line-height: 24px;
+  text-align: left;
+  vertical-align: middle;
+  :global {
+    .ant-select-selection {
+      height: 23px;
+      font-size: 12px;
+      color: #777;
+      .ant-select-selection__rendered {
+        line-height: 23px;
+        margin: 0;
+        .ant-select-selection__placeholder {
+          color: #777;
+        }
+      }
+      .ant-select-selection-selected-value {
+        line-height: 23px;
+      }
+      .ant-select-arrow, .ant-select-selection__clear {
+        right: 0;
+      }
+    }
+  }
+}
+:global {
+  .react-app {
+    .ant-select-dropdown {
+      .ant-select-tree-switcher,
+      .ant-select-tree-node-content-wrapper,
+      .ant-select-tree-title {
+        cursor: pointer;
+      }
+    }
+    .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected,
+    .ant-select-tree li .ant-select-tree-node-content-wrapper:hover {
+      background-color: #fff;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import '../../node_modules/antd/lib/style/v2-compatible-reset.less';
+
+:global {
+  // 在body上添加一个ant-v2-compatible的calss
+  .ant-v2-compatible {
+    // checkbox
+    .ant-tree-checkbox-inner:after {
+      left: 4px;
+      top: 1px;
+    }
+    // rang日历
+    .ant-calendar-range {
+      width: 470px;
+    }
+
+    .ant-pagination-item-active,
+    .ant-pagination-item-active:focus {
+      color: #fff;
+      background-color: #108ee9;
+      border-color: #108ee9;
+      // 关掉动画效果
+      transition: none;
+    }
+
+    .ant-pagination-item-active a {
+      color: #fff;
+    }
+
+    li a {
+      // 关掉动画效果
+      transition: none;
+    }
+  }
+}

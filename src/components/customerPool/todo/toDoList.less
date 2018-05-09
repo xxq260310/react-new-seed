@@ -1,0 +1,74 @@
+.todoListEmpty {
+  :global {
+    .ant-table-empty {
+      .ant-table-placeholder {
+        color: #f00;
+        &:before {
+          display: inline-block;
+          width: 253px;
+          height: 330px;
+          background-image: url('./img/empty.png');
+        }
+      }
+    }
+  }
+}
+
+.title {
+  display: inline-block;
+  // max-width: 220px;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+}
+.submitDate {
+  width: 150px;
+  display: inline-block;
+}
+.orgId {
+  width: 120px;
+  display: inline-block;
+}
+.orgName {
+  width: 135px;
+  display: inline-block;
+  color: #666;
+}
+.stepName {
+  width: 150px;
+  display: inline-block;
+}
+
+.empty {
+  position: relative;
+}
+
+.emptyWrapper {
+  position: absolute;
+  top: 43px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  &:before {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    content: "center";
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  :global {
+    .empty-container {
+      display: inline-block;
+    }
+    img {
+      width: 127px;
+      height: 165px;
+    }
+    p {
+      font-size: 18px;
+      color: #828282;
+    }
+  }
+}

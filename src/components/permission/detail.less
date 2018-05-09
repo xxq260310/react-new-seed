@@ -1,0 +1,46 @@
+@import './publicconfig.less';
+
+.detailComponent {
+	width: 100%;
+	height: 100%;
+	padding: 0 20px;
+	margin: 0;
+	overflow: auto;
+	background-color: white;
+}
+.dcHeader {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid #e9e9e9;
+}
+.dcHaderNumb {
+	float: left;
+	font-size: 14px;
+	color: #333;
+}
+.dcHeaderModifyBtn {
+	float: right;
+	margin-top: 7px;
+	width: 59px;
+	height: 27px;
+	text-align: center;
+	line-height: 27px;
+	color: #348cf0;
+	font-size: 12px;
+	border: 1px solid #348cf0;
+	border-radius: 4px;
+	cursor: pointer;
+	&:hover {
+		background: #338aed;
+		border: 1px solid #338aed;
+		color: #fff;
+	}
+	&:active {
+		background: #2d7bd4;
+		border: 1px solid #2d7bd4;
+		color: #fff;
+	}
+}

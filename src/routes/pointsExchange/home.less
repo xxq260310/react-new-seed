@@ -1,0 +1,75 @@
+.exchangeContainer {
+  padding: 20px;
+  .exchangeContent {
+    background-color: #fff;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    .headContainer {
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 2px solid #e8e8e8;
+      .headLine {
+        font-size: 14px;
+        color: #000;
+      }
+    }
+    .form {
+      margin: 20px 0;
+      .input {
+        height: 31px;
+      }
+      :global {
+        .ant-form-item {
+          white-space: nowrap;
+          margin-right: 0;
+          .DateRangePickerInput {
+            display: flex;
+            height: 31px;
+          }
+        }
+      }
+      .datePick {
+        :global {
+          .ant-form-item {
+            height: 31px;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+    .buttonRow {
+      margin-top: 20px;
+      .btn {
+        width: 80px;
+        margin-left: 20px;
+      }
+    }
+    .table {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #e8e8e8;
+      border-bottom: none;
+      span, .nameColum {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: auto;
+      }
+      .nameColum {
+        width: 200px;
+      }
+      :global {
+        .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+          padding: 16px 4px;
+        }
+      }
+    }
+    :global {
+      .ant-pagination-item-active:focus a {
+        color: #fff;
+      }
+    }
+  }
+}

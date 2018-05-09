@@ -1,0 +1,183 @@
+@import '../../../css/variable.less';
+
+.custDetailWrapper {
+  .custNameLink {
+    max-width: 150px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+  }
+  & > .emptyHeader {
+    height: 38px;
+  }
+  & > .header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding-bottom: 10px;
+    & > .filterSection {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      & > .filter:first-child {
+        margin-right: 18px;
+      }
+    }
+    :global {
+      .selectFeedBackIdL1Dropdown {
+        .ant-select-dropdown-menu {
+          text-align: left;
+        }
+        .ant-select-dropdown-menu-item {
+          text-overflow: ellipsis;
+          max-width: 180px;
+          overflow-x: hidden;
+          white-space: nowrap;
+        }
+      }
+      //select边框
+      .ant-select {
+        height: 28px;
+        width: auto;
+        max-width: 200px !important;
+        .ant-select-selection {
+          background-color: transparent;
+          border: 1px solid transparent;
+        }
+        // 字体颜色大小
+        .ant-select-selection__rendered div,
+        .ant-select-selection__rendered span {
+          color: #33393c;
+          font-size: 14px;
+          padding-right: 25px;
+        }
+        &.ant-select-open .ant-select-selection {
+          border: 1px solid #348cf0;
+          box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+        }
+      }
+
+      // 兼容ie下拉图标旋转样式
+      .ant-select-arrow {
+        transform: scale(0.75);
+      }
+
+      //多选下拉小图标样式
+      .ant-select-arrow:before {
+        content: "";
+        height: 0;
+        position: absolute;
+        right: 2px;
+        top: 5px;
+        width: 0;
+        border: none;
+        border-top: 10px solid #c2c2c2;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+      }
+      //清楚单选select小图标旋转
+      .ant-select-open .ant-select-arrow:before {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+    .filterDropdownList {
+      :global {
+        .ant-select-dropdown-menu-item {
+          text-align: left;
+        }
+      }
+    }
+  }
+  & > .custDetailTableSection {
+    display: block;
+    .custDetailTable {
+      padding: 0;
+      max-height: 700px;
+      table > thead > tr > th {
+        color: #333;
+      }
+      table > tbody > tr > td:nth-child(2) {
+        pointer-events: none;
+      }
+      table > thead > tr > th, tbody > tr > td {
+        padding: 8px 0;
+        text-align: left;
+        font-size: 14px;
+        line-height: 18px;
+        background: #fff;
+        height: 38px;
+      }
+      tbody > tr:not(:last-child) > td {
+        border-bottom: 1px solid #e9e9e9;
+        background: #fff;
+        color: #666;
+      }
+      table > tbody > tr > td:last-child {
+        text-align: left;
+      }
+      tbody > tr > td > span:last-child {
+        margin: 0 auto;
+      }
+      tbody > tr > td:last-child > span > div {
+        max-width: 220px;
+      }
+      table > thead > tr > th {
+        text-align: left;
+        background-color: #f7f7f7;
+      }
+      table > tbody > tr > td:first-child, table > thead > tr > th:first-child {
+        text-align: center;
+      }
+      table > thead > tr > th:first-child {
+        text-align: left;
+      }
+      table > thead > tr > th:first-child > span {
+        margin-left: 25px;
+      }
+      table > tbody > tr > td:first-child > div {
+        text-align: left;
+      }
+      table > tbody > tr > td:first-child > div {
+        margin: 0;
+        margin-left: 20px;
+      }
+      :global {
+        .ant-table-header {
+          background-color: #fff;
+          table {
+            border-bottom: 0;
+          }
+        }
+      }
+      .detailColumn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        // margin-left: -10px;
+        width: 100%;
+        div {
+          width: 100px;
+          margin-right: 10px;
+          // margin-left: 10px;
+          text-align: left;
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 5px;
+        }
+      }
+      .iconMoneyImage {
+        height: 14px;
+        // img居中
+        line-height: 18px;
+        vertical-align: middle;
+      }
+    }
+    .emptyContent {
+      .emptyContent;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+output/
+node_modules/
+mockup/
+log/
+fastclick.js
+static/
+dist
+build/**
+config/**

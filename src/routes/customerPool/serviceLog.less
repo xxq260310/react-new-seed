@@ -1,0 +1,49 @@
+.serviceInner {
+  // display: none;
+  padding: 20px;
+  .servicecontent {
+    padding: 10px;
+    background: #fff;
+    .service_title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #33393c;
+      border-bottom: 1px solid #ddd;
+      padding: 5px 0 10px;
+    }
+    .service_from {
+      font-size: 14px;
+      padding: 20px 0;
+      .service_label {
+        text-align: center;
+      }
+      :global {
+        .ant-select-selection {
+          border: 1px solid #d9d9d9;
+        }
+        .ant-select,.ant-calendar-picker {
+          width: 85%;
+        }
+      }
+    }
+    .showBtn {
+      display: none;
+    }
+    .more {
+      text-align: center;
+    }
+  }
+
+  :global {
+    .ant-select-selection {
+      border: 1px solid #d9d9d9;
+    }
+    .ant-select,.ant-calendar-picker {
+      width: 85% !important;
+      .ant-calendar-range-picker-input:nth-of-type(2) {
+        margin-left: 15px;
+      }
+    }
+  }
+}
+/*子组件样式修改*/

@@ -1,0 +1,54 @@
+.lineInputWrap {
+    width: 100%;
+    margin: 10px 0;
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    .label {
+        float: left;
+        width: 130px;
+        font-size: 14px;
+        color: #9b9b9b;
+        text-align: right;
+        line-height: 32px;
+        margin-right: -130px;
+        .required {
+            margin-right: 4px;
+            color: red;
+            font-style: normal;
+        }
+        .colon {
+            padding: 0 4px;
+        }
+    }
+    .componentBox {
+        margin-left: 130px;
+        padding-left: 20px;
+        float: left;
+        font-size: 14px;
+        color: #333;
+        &.inputBox {
+            input {
+                width: 220px;
+                height: 32px;
+            }
+        }
+        &.selectBox {
+            :global(.ant-select) {
+                width: 220px;
+                height: 32px;
+                border-radius: 4px;
+            }
+        }
+        &.textAreaBox {
+            textarea {
+                width: 417px;
+                height: 74px;
+                resize: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.commissionLine {
+  width: 100%;
+  margin: 10px 0;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+
+.label {
+  float: left;
+  font-size: 14px;
+  color: #9b9b9b;
+  text-align: right;
+  line-height: 32px;
+  .required {
+    margin-right: 4px;
+    color: red;
+    font-style: normal;
+    line-height: 32px;
+  }
+  .colon {
+    padding: 0 4px;
+  }
+}
+
+.componentBox {
+  padding-left: 20px;
+  float: left;
+  font-size: 14px;
+  color: #333;
+  :global {
+    & .autoCompleteApprover.ant-select {
+      width: 220px;
+      height: 32px;
+    }
+  }
+  &.inputBox {
+    :global(.ant-select) {
+        width: 220px;
+        height: 32px;
+        border-radius: 4px;
+    }
+    textarea {
+      width: 420px;
+      height: 74px;
+      resize: none;
+    }
+  }
+}

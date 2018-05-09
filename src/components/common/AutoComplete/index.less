@@ -1,0 +1,42 @@
+.labelName {
+  display: inline-block;
+  font-size: 14px;
+  color: #a1a1a1;
+  width: 80px;
+  line-height: 18px;
+  text-align: right;
+  margin-right: 12px;
+}
+.dropDownBox {
+   height: 32px;
+}
+.searchBox {
+  :global {
+    & .ant-input {
+      padding-right: 26px !important;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+.searchDropDown {
+  color: #666;
+  font-weight: bold;
+  border-bottom: 1px solid #f6f6f6;
+  text-align: center;
+  cursor: default;
+  max-height: 343px;
+  :global {
+    .ant-select-dropdown-menu-item {
+      height: 40px;
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+}
+
+.prodValue {
+  display: inline-block;
+  color: #333;
+}

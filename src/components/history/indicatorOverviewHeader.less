@@ -1,0 +1,56 @@
+.indicatorOverviewHeader {
+  padding: 0 0 0 15px;
+  // margin: 15px 0 0 0;
+  height: 44px;
+  line-height: 44px;
+  // background-color: #fff;
+  background-color: #f3f3f4;
+  // border-bottom: 1px solid #bfbfbf;
+  box-sizing: border-box;
+  .analyticalCaption {
+    padding-top: 10px;
+    float: left;
+    font-size: 14px;
+    color: #333;
+    line-height: 34px;
+  }
+  .overviewHeaderRight {
+    float: right;
+    :global {
+      .ant-btn {
+        width: 95px;
+        margin-left: 10px;
+      }
+      .ant-btn-background-ghost {
+        border: none;
+        background-color: #fff !important;
+        color: #aaa;
+        padding-top: 2px;
+        box-shadow: 0 0 5px rgba(150, 150, 150, 0.3);
+        i {
+          vertical-align: middle;
+          margin-right: 5px;
+          &::before {
+            font-size: 15px;
+            vertical-align: middle;
+          }
+        }
+        i.icon-shanchu {
+          &::before {
+            font-size: 14px;
+          }
+        }
+      }
+      .ant-btn-background-ghost.ant-btn-primary,
+      .ant-btn:hover, .ant-btn:focus, .ant-btn:active, .ant-btn.active {
+        color: #108ee9;
+        border-color: #108ee9;
+      }
+    }
+  }
+  .deleteBtnUnshowClass,
+  .createBtnUnshowClass,
+  .updateBtnUnshowClass {
+    display: none;
+  }
+}

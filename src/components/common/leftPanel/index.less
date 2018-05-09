@@ -1,0 +1,126 @@
+:global {
+  .react-app {
+    .leftPanel {
+      background-color: #f3f3f4;
+      // padding: 10px 0 0;
+      height: 100%;
+      box-shadow: 5px 5px 5px #ededee;
+      .ant-table-tbody > tr,
+      .ant-table-thead > tr {
+          transition: initial;
+      }
+      .leftPanelTable {
+        background: white;
+        border-radius: 5px;
+        height: 100%;
+      }
+      .leftPanelTable .ant-table .ant-table-tbody > tr {
+        cursor: pointer;
+        & > td {
+          text-align: left;
+        }
+      }
+      .leftPanelTable table {
+        width: 100%;
+        max-width: 100%;
+      }
+      .leftPanelTable table > tbody > tr:nth-child(odd) {
+        background-color: #fff;
+      }
+      .active {
+        background-color: rgba(53, 123, 240, .1) !important;
+      }
+      .leftPanelTable table > tbody > tr {
+        height: 80px;
+      }
+      .leftPanelTable .ant-table-thead > tr > th, .leftPanelTable .ant-table-tbody > tr > td {
+        padding: 10px 8px;
+      }
+      .leftPanelTable table > tbody > tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      .description {
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .address, .description {
+        max-width: 400px;
+        width: 100%;
+        // 超过一行则打点显示
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .address, .state-resolve, .state-close, .name, .date {
+        color: #a2a2a2;
+      }
+      .description, .id {
+        color: #666;
+        font-weight: 600;
+      }
+      .leftSection {
+        width: 100%;
+      }
+      .code, .state-resolve, .state-close, .name {
+        font-size: 14px;
+      }
+      .address, .date {
+        font-size: 12px;
+      }
+      .date {
+        white-space: nowrap;
+      }
+      .leftPanelTable .ant-table-tbody > tr > td {
+        border: 0;
+      }
+      .rightSection {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-right: 10px;
+      }
+      .state-resolve {
+        color: #fdd02b;
+      }
+      .state-close {
+        color: #7bcd73;
+      }
+      .selectedRow {
+        background-color: #e4eef8;
+      }
+      .wenti {
+        color: #fdd02b;
+      }
+      .jianyi {
+        color: #0f8ee9;
+      }
+      .ant-pagination.ant-table-pagination {
+        // white-space: nowrap;
+        // overflow: hidden;
+      }
+      .ant-pagination-item {
+        margin-bottom: 0;
+      }
+      .emptyIcon {
+        display: inline-block;
+        width: 16px;
+        height: 17px;
+      }
+      .ant-table-pagination {
+        display: block;
+        text-align: center;
+        height: 22px;
+        overflow: hidden;
+        li {
+          margin-bottom: 2px;
+        }
+      }
+    }
+    .feedbackId {
+      padding-left: 5px;
+    }
+  }
+}

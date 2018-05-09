@@ -1,0 +1,173 @@
+/*
+* @Author: wangjunjun
+* 全渠道服务记录列表
+*/
+exports.response = function (req, res) {
+  return {
+    "code": "0", 
+    "msg": "OK", 
+    "resultData": {
+      'page': {
+        'pageSize': 10,
+        'totalNum': 100,
+        'curPageNum': 1,
+      },
+      "list": [
+        {
+          "eventName":"持续持有现金",
+          "name":"xx",
+          "custId":"000",
+          "serverChannel":"Phone",
+          "serverRecord":"邮件沟通",
+          "actCreatedBy":"1-OXZ5",
+          "serverDate":"2016/11/11 14:29:58",
+          "callBack":"xx",
+          "xFeedBackDate":"2016/11/11 14:29:58",
+          "ant":"xx",
+          "asStatus":"完成",
+          "orgName":"营业部"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"001",
+          "custId":"经纪客户号",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"002",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"003",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"004",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"005",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"006",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"007",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"008",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"009",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+        {
+          "eventName":"任务名称",
+          "name":"客户姓名",
+          "custId":"010",
+          "serverChannel":"服务渠道",
+          "serverRecord":"服务记录",
+          "actCreatedBy":"实施者",
+          "xServiceDate":"服务时间",
+          "callBack":"客户反馈",
+          "xFeedBackDate":"反馈时间",
+          "ant":"工作结果",
+          "asStatus":"服务状态",
+          "orgId":"机构编码"
+        },
+      ],
+    }
+  }
+}

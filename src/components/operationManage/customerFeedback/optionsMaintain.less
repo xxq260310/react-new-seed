@@ -1,0 +1,135 @@
+.optionsMaintain {
+  .title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .addParentClassBox {
+    margin-bottom: 10px;
+    :global {
+      .icon-edit {
+        display: none;
+      }
+    }
+  }
+  .parentAddBtn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+  }
+  .header {
+    display: flex;
+    div:nth-of-type(1) {
+      min-width: 40%;
+      div {
+        width: auto;
+      }
+      em {
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+    div:nth-of-type(2) {
+      min-width: 40%;
+      color: #108ee9;
+    }
+    .lengthDiv {
+      :global {
+        .arrow {
+          left: auto;
+          margin-left: -16px;
+        }
+      }
+    }
+    :global {
+      .anticon-delete, .icon-edit, .anticon-up, .anticon-down {
+        font-size: 14px;
+        color: #108ee9;
+      }
+      .icon-success {
+        color: #62ca57;
+      }
+    }
+  }
+  :global {
+    .ant-collapse {
+      font-size: 14px;
+      .ant-collapse-item {
+        .anticon-up {
+          display: none;
+        }
+        &.ant-collapse-item-active {
+          .anticon-down {
+            display: none;
+          }
+          .anticon-up {
+            display: inline-block;
+          }
+        }
+        .icon-edit {
+          visibility: hidden;
+        }
+        &:hover {
+          .ant-collapse-header > div > div > div .icon-edit {
+            visibility: visible;
+          }
+        }
+      }
+    }
+    .ant-collapse > div {
+      .ant-collapse-header > .arrow {
+        display: none !important;
+      }
+      background: #fff;
+      .ant-collapse-content-box {
+        padding: 10px 0 14px 16px;
+        border-top: 1px solid rgb(233, 233, 233);
+        ul {
+          li {
+            margin-bottom: 4px;
+            height: 28px;
+            line-height: 28px;
+            em {
+              margin-right: 10px;
+              width: auto;
+            }
+            .anticon-delete, .icon-edit {
+              vertical-align: middle;
+              visibility: hidden;
+              color: #108ee9;
+              cursor: pointer;
+            }
+            button {
+              height: 28px;
+            }
+            &:hover {
+              .icon-edit {
+                visibility: visible;
+              }
+              .anticon-delete {
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(odd) {
+        background: #f3f7ff;
+        .ant-collapse-content {
+          background: #f3f7ff;
+          .ant-collapse-content-box {
+            border-top: 2px solid #ccc;
+          }
+        }
+      }
+    }
+  }
+  .pageBox {
+    float: right;
+    margin: 20px 40px 20px 0;
+    :global {
+      .ant-pagination-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

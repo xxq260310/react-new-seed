@@ -1,0 +1,124 @@
+@import "../../css/variable.less";
+.listContainer {
+  background-color: #f3f3f4;
+  .inner {
+    margin: 21px 18px 43px 19px;
+    .content {
+      padding: 17px 74px 147px 77px;
+      background-color: #fff;
+      .backColumn {
+        position: absolute;
+        line-height: 20px;
+        height: 20px;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        color: #108ee9;
+        cursor: pointer;
+        .backIcon {
+          font-size: 12px;
+          font-weight: 600px;
+          vertical-align: 2px;
+        }
+        .backTitle {
+          font-family: @font-family;
+          font-size: 14px;
+          letter-spacing: -0.09px;
+          text-align: left;
+          margin-left: 4px;
+        }
+      }
+      .backColumn:hover {
+          color: #10aeff;
+        }
+      .head {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+        .titleRow {
+          position: relative;
+          .upper {
+            left: 0;
+          }
+          .title {
+            font-family: @font-family;
+            font-size: 16px;
+            color: #4a4a4a;
+            letter-spacing: 0.23px;
+            text-align: center;
+            margin-left: 120px;
+            margin-right: 120px;
+            line-height: 20px;
+          }
+        }
+        .infoRow {
+          margin-top: 6px;
+          display: -webkit-flex; /* Safari */
+          display: flex;
+          .column {
+            flex-grow: 1;
+            text-align: right;
+            font-family: @font-family;
+            font-size: 14px;
+            color: #9b9b9b;
+            letter-spacing: 0.2px;
+          }
+          .middle {
+            margin-left: 40px;
+            margin-right: 40px;
+            flex-grow: 0;
+            text-align: center;
+          }
+          .column:last-child {
+            text-align: left;
+          }
+        }
+      }
+      .body {
+        margin: 9px 0 58px;
+        font-family: @font-family;
+        font-size: 14px;
+        color: #4a4a4a;
+        letter-spacing: 0.2px;
+        line-height: 26px;
+        text-align: justify;
+        text-indent: 30px;
+        min-height: 365px;
+      }
+      .footer {
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        position: relative;
+        height: 20px;
+        line-height: 20px;
+        .fileColumn {
+          margin-right: 47px;
+          display: -webkit-flex; /* Safari */
+          display: flex;
+          img {
+            display: inline-block;
+            outline: 0;
+            border: 0;
+            width: 12px;
+            height: 12px;
+            vertical-align: 1px;
+            margin-right: 6px;
+          }
+          .fileName {
+            font-family: @font-family;
+            font-size: 14px;
+            color: #108ee9;
+            letter-spacing: 0.2px;
+            a:hover {
+              color: #10aeff;
+            }
+          }
+        }
+        .downLoadNone {
+          display: none;
+        }
+        .under {
+          right: 0;
+        }
+      }
+    }
+  }
+}

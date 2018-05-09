@@ -1,0 +1,102 @@
+.missionImplementationSection {
+  display: block;
+  padding-top: 10px;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .emptyContent {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    img {
+      width: 100px;
+    }
+    div {
+      font-size: 14px;
+    }
+  }
+  .content {
+    padding-top: 10px;
+    display: flex;
+    margin-right: 16px;
+    flex-wrap: wrap;
+    .leftContent {
+      flex: 1 1 328px; // flex左右两边的基准值只需要调节一致即可
+      min-width: 328px;
+      margin-right: 16px;
+    }
+    .leftContent.noMargin {
+      margin-right: 0;
+    }
+    .leftContent.forceCollapse {
+      // 计算值 原min-width + margin-right + 1，谨慎更改
+      // +1是为了避免边界问题
+      min-width: 345px;
+    }
+    .rightContent {
+      flex: 1 1 328px;
+      min-width: 328px;
+    }
+  }
+  .custManagerDetailSection {
+    padding-top: 10px;
+    display: flex;
+    margin-right: 16px;
+  }
+  .orgTreeSection {
+    padding-right: 16px;
+    width: 100%;
+    text-align: right;
+    height: 30px;
+    margin-top: 12px;
+    & > div {
+      float: right;
+    }
+    :global .custRangeForCust {
+      padding-left: 11px;
+      transform: translateX(-11px);
+    }
+  }
+  .report {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 16px;
+    .createBtn {
+      color: #348cf0;
+      cursor: pointer;
+    }
+    .noCreateBtn {
+      color: #999;
+    }
+    .line {
+      margin: 0 8px;
+      font-size: 14px;
+    }
+    .icon_mr {
+      margin-right: 5px;
+    }
+    .creatingBtn {
+      cursor: pointer;
+      color: #348cf0;
+      img {
+        width: 12px;
+        height: 12px;
+        vertical-align: top;
+        margin-right: 5px;
+      }
+    }
+    .downLoading {
+      a {
+        &:last-child {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

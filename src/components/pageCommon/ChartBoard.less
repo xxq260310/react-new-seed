@@ -1,0 +1,27 @@
+.board {
+  background: #fff;
+  padding-bottom: 8px;
+}
+.colWrapper:nth-child(n+4) > div {
+  margin-top: 8px;
+}
+.colWrapper:nth-child(3n) > div {
+  margin-right: 0;
+}
+.colWrapper {
+  position: relative;
+  &:after {
+    top: 20px;
+    right: 1px;
+    content: " ";
+    position: absolute;
+    width: 1px;
+    height: 340px;
+    background-color: #e5e5e5;
+  }
+}
+.colWrapper:nth-child(3n) {
+  &:after {
+    display: none;
+  }
+}

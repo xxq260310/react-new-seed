@@ -1,0 +1,217 @@
+@import '../../../css/variable.less';
+
+.modalContainer {
+  .searchWrapper {
+    margin-bottom: 30px;
+    :global {
+      .ant-input-affix-wrapper .ant-input-suffix {
+        right: -46px;
+      }
+      .ant-input-affix-wrapper {
+        input {
+          width: 268px;
+          border-radius: 0;
+          cursor: pointer;
+        }
+        .ant-input-suffix {
+          right: 0;
+          & button {
+            position: relative;
+            border-radius: 0;
+            width: 30px;
+            height: 30px;
+            & i {
+              position: absolute;
+              top: 5px;
+              left: 7px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .emptyContent {
+    .emptyContent;
+  }
+}
+.taskOverViewContainer {
+  width: 80%;
+  margin: 0 auto;
+  & > .basicInfoSection {
+    background: #fff;
+    border: 1px solid #979797;
+    margin-bottom: 30px;
+    & > .title {
+      font-size: 12px;
+      color: #4a4a4a;
+      text-align: left;
+      margin-left: 30px;
+      margin-bottom: 12px;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+    & > .divider {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+    }
+    & > .infoDescription {
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-bottom: 40px;
+      & > .descriptionOrNameSection {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 12px;
+        color: #9b9b9b;
+        text-align: left;
+        margin-bottom: 10px;
+        & > div:first-child {
+          white-space: nowrap;
+          text-align: right;
+          min-width: 85px;
+        }
+        & > div:last-child {
+          margin-left: 10px;
+          word-break: break-all;
+          padding-right: 30px;
+          color: #4a4a4a;
+        }
+        .singleOrMultipleChoice {
+          margin-bottom: 8px;
+          span:not(:first-child) {
+            margin-left: 15px;
+          }
+          color: #4a4a4a;
+        }
+        .subjectiveQuestion {
+          margin-bottom: 8px;
+        }
+      }
+      & > .taskSection {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 12px;
+        color: #9b9b9b;
+        text-align: left;
+        margin-bottom: 10px;
+        & > div {
+          width: 50%;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          & > div:first-child {
+            white-space: nowrap;
+            text-align: right;
+            min-width: 85px;
+          }
+          & > div:last-child {
+            margin-left: 10px;
+            word-break: break-all;
+            padding-right: 30px;
+            color: #4a4a4a;
+          }
+        }
+        & > .labelDesc {
+          width: 100%;
+        }
+      }
+    }
+  }
+ .selectApprover {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & > span {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    :global {
+      .ant-input-affix-wrapper {
+        width: 150px;
+      }
+    }
+  }
+  .selectApprover::before {
+    display: inline-block;
+    margin-right: 4px;
+    content: "*";
+    line-height: 1;
+    font-size: 12px;
+    color: #f04134;
+  }
+  .tishi {
+    color: #e33c39;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .icon {
+    margin-right: 5px;
+  }
+}
+.approvalModalContainer {
+  :global {
+    & .ant-modal-body {
+      padding: 0;
+      padding-top: 14px;
+      padding-left: 25px;
+      padding-right: 20px;
+      overflow-y: scroll;
+      height: e("calc(80vh - 130px)");
+    }
+    & .ant-pagination-options .ant-select {
+      width: 80px;
+    }
+    & .ant-modal {
+      width: 700px;
+    }
+  }
+}
+.approvalListTable {
+  padding: 0 !important;
+  table {
+    border: 1px solid #ddd;
+  }
+  table > thead > tr > th, tbody > tr > td {
+    padding: 0;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 8px;
+    text-align: center !important;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+    color: #727272;
+  }
+  table > tbody > tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  table > tbody > tr > td {
+    border-bottom: 1px solid #e9e9e9;
+  }
+  tbody > tr > td > div,  tbody > tr > th {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+  }
+  table > thead > tr > th {
+    background-color: #f7f7f7;
+  }
+  table > colgroup > col:first-child {
+    width: 10%;
+    min-width: 10%;
+  }
+}
+.btnSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.confirmBtn {
+  margin-left: 10px;
+}

@@ -1,0 +1,165 @@
+:global {
+  .react-app {
+    .reportHeader {
+      width: 100%;
+      height: 55px;
+      line-height: 55px;
+      background-color: #fff;
+      position: relative;
+      :global {
+        .ant-alert.ant-alert-warning {
+          width: 520px;
+          position: absolute;
+          right: 20px;
+          top: 60px;
+          text-align: left;
+          border: none;
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+          background-color: #fff;
+        }
+        .ant-alert-with-description .ant-alert-close-icon {
+          height: 20px;
+          width: 20px;
+          font-size: 20px;
+        }
+        .ant-alert-with-description .ant-alert-icon {
+          top: 32px;
+          left: 25px;
+        }
+        .ant-alert-with-description {
+          padding: 32px 32px 30px 60px;
+        }
+        .ant-alert-message {
+          font-size: 18px;
+          color: #333;
+        }
+        .ant-alert-description {
+          font-size: 14px;
+          color: #333;
+        }
+      }
+    }
+    .reportName {
+      font-size: 14px;
+      color: #333;
+      .preView {
+        padding: 0 15px;
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .boardMenu {
+      font-size: 12px;
+      line-height: 30px;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      &:first-child {
+        margin-top: 10px;
+      }
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.textAlignRight {
+  text-align: right;
+}
+.reportHeaderRight {
+  composes: textAlignRight;
+  flex: 1 0 auto;
+  .reportHeaderRightSpan {
+    display: inline-block;
+    width: 200px;
+    :global {
+      .ant-calendar-picker {
+        width: 200px !important;
+        top: 8px;
+        right: 15px;
+        .ant-calendar-range-picker-input {
+          position: absolute;
+          top: 0;
+          right: 18px;
+          &:first-child {
+            left: 0;
+          }
+        }
+        .ant-calendar-range-picker-separator {
+          position: absolute;
+          left: 84px;
+        }
+        .ant-calendar-picker-icon {
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+  .SummaryTypeSelect {
+    display: inline-block;
+    vertical-align: middle;
+    :global {
+      .ant-select-selection-selected-value {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.dateFilter {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 13px;
+  color: #4c4c4c;
+  vertical-align: middle;
+}
+.vSplit {
+  margin: 0 20px;
+  display: inline-block;
+  width: 1px;
+  height: 23px;
+  background-color: #ccc;
+  vertical-align: middle;
+}
+
+.affixFsp {
+  position: fixed;
+  z-index: 999;
+}
+.affix {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+//
+//
+// 修改头部Select样式
+:global {
+  .react-app {
+    .reportHeader {
+      .ant-select {
+        color: #33393c;
+        font-size: 18px;
+      }
+      .ant-select-selection {
+        background-color: transparent;
+        border-color: transparent;
+      }
+      .ant-select-open .ant-select-selection,
+      .ant-select-focused .ant-select-selection,
+      .ant-select-selection:focus,
+      .ant-select-selection:active {
+        border-color: transparent;
+        box-shadow: none;
+      }
+      .ant-select-selection--single {
+        height: 24px;
+      }
+      .ant-select-selection__rendered {
+        line-height: 22px;
+      }
+    }
+  }
+}
+// end

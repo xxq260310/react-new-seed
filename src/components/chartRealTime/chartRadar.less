@@ -1,0 +1,96 @@
+.radarBox {
+  .titleDv {
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    color: #666;
+  }
+  .radar {
+    width: 100%;
+    padding: 10px;
+  }
+  .radarInfo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    .radarDesc {
+      display: inline-block;
+      position: relative;
+      padding-left: 12px;
+      line-height: 24px;
+      &:before {
+        content: " ";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background-color: #108ee9;
+      }
+      .name {
+        font-size: 12px;
+        margin-right: 6px;
+        color: #666;
+      }
+      .totalDesc {
+        font-size: 12px;
+        color: #666;
+      }
+      .totalNo {
+        margin: 0 4px;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .radarNowDura {
+        position: relative;
+        margin-left: 10px;
+        padding-left: 14px;
+        display: inline-block;
+        font-size: 12px;
+        color: #38d8e8;
+        &:before {
+          content: " ";
+          position: absolute;
+          width: 12px;
+          height: 1px;
+          top: 12px;
+          left: 0;
+          background-color: #38d8e8;
+        }
+      }
+      .radarLastDura {
+        position: relative;
+        margin-left: 8px;
+        padding-left: 14px;
+        display: inline-block;
+        font-size: 12px;
+        color: #756fb8;
+        &:before {
+          content: " ";
+          position: absolute;
+          width: 12px;
+          height: 1px;
+          top: 12px;
+          left: 0;
+          background-color: #756fb8;
+        }
+      }
+      .now {
+        margin: 0 8px;
+        color: #38d8e8;
+        font-size: 16px;
+      }
+      .before {
+        margin: 0 8px;
+        color: #756fb8;
+        font-size: 16px;
+      }
+    }
+  }
+}

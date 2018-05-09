@@ -1,0 +1,50 @@
+.titleText {
+  padding: 0 18px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  font-size: 18px;
+}
+.items {
+  background: #56c2e9 url('./img/bg_summury.jpg') no-repeat center center;
+  background-size: 100% 100%;
+  margin-bottom: 25px;
+  position: relative;
+  .preBtn, .nextBtn {
+    position: absolute;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 105px;
+    cursor: pointer;
+    z-index: 2;
+    i {
+      font-size: 28px;
+      color: #fff;
+      background: rgba(0, 0, 0, .2);
+      border-radius: 100%;
+      &:hover {
+        background: rgba(0, 0, 0, .4);
+      }
+    }
+  }
+  .preBtn {
+    transform: rotate(180deg);
+    line-height: 85px;
+  }
+  .nextBtn {
+    right: 0;
+  }
+  :global {
+    .ant-pagination-simple .ant-pagination-simple-pager {
+      display: none;
+    }
+  }
+}
+.itemWrap:nth-child(8n) div div {
+  border-right: 0;
+}
+.itemWrap:last-child div div {
+  border-right: 0;
+}

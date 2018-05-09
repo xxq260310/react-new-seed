@@ -1,0 +1,68 @@
+  .pickCustomerSection {
+    & > .title {
+      font-size: 15px;
+      color: #666;
+      font-weight: 600;
+    }
+    & > .divider {
+      height: 1px;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    & > .tabsSection {
+      // & > .dashedDivider {
+      //   height: 1px;
+      //   border-bottom: 1px dashed #dddddd;
+      //   width: 100%;
+      //   margin-top: 10px;
+      //   margin-bottom: 10px;
+      // }
+      /*自定义tab切换组件样式*/
+      :global {
+        .ant-tabs {
+          box-sizing: border-box;
+          position: relative;
+          overflow: hidden;
+          zoom: 1;
+          color: rgba(0, 0, 0, 0.65);
+          margin-top: 10px;
+        }
+        .ant-tabs-bar {
+          border-bottom: none;
+        }
+        .ant-tabs-nav-container {
+          border-bottom: 1px dashed #ddd;
+        }
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container {
+          height: 46px;
+        }
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+          border-color: #108ee9;
+          color: #108ee9 !important;
+          padding-bottom: 5px;
+          border: 1px solid #108ee9 !important;
+          background-image: url('./img/choosed-icon.png');
+          background-repeat: no-repeat;
+          background-size: 15px 15px;
+          background-position: 100% 110%;
+          border-radius: 5px;
+        }
+        .ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+          margin: 0;
+          transition: none;
+          margin-right: 31px;
+          border-radius: 3px;
+          border: 1px solid #d9d9d9;
+          background-color: #fff;
+        }
+        .ant-tabs-nav .ant-tabs-tab {
+          transition: none;
+          border-radius: 5px;
+          margin: 0;
+          border: 1px solid #d9d9d9;
+        }
+      }
+    }
+  }

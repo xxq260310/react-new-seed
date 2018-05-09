@@ -1,0 +1,105 @@
+.filter {
+  &.hidden {
+    display: none;
+  }
+  .filterLabel {
+    display: inline-block;
+    color: #9b9b9b;
+    font-size: 14px;
+    overflow: auto;
+  }
+  .filterSeperator {
+    display: inline-block;
+    color: #9b9b9b;
+    font-size: 14px;
+    vertical-align: super;
+  }
+  .closeIcon {
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #cecdcd;
+    vertical-align: super;
+    transform: translateY(-1px);
+    font-weight: lighter;
+    cursor: pointer;
+    &.hideCloseIcon {
+      display: none;
+    }
+  }
+  .dropdownfilterLabel {
+    font-size: 14px;
+    min-width: 160px;
+    color: #333;
+  }
+
+  :global {
+    .ant-select {
+      display: inline-block;
+      vertical-align: bottom;
+      .ant-select-selection.ant-select-selection--single {
+        outline: none;
+        box-shadow: none;
+        .ant-select-selection__rendered {
+          margin-left: 5px;
+        }
+        border-color: transparent;
+        .ant-select-selection-selected-value {
+          font-size: 14px;
+          color: #333;
+          font-weight: normal;
+        }
+      }
+      &.ant-select-open {
+        .ant-select-selection.ant-select-selection--single {
+          .ant-select-selection__rendered {
+            margin-left: 5px;
+          }
+          border-color: #348cf0;
+          box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+        }
+      }
+    }
+    // 兼容ie下拉图标旋转样式
+    .ant-select-arrow {
+      transform: scale(0.75);
+    }
+    //多选下拉小图标样式
+    .ant-select-arrow:before {
+      content: "";
+      height: 0;
+      position: absolute;
+      right: -5px;
+      top: 4px;
+      width: 0;
+      border: none;
+      border-top: 8px solid #c2c2c2;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+    }
+    //清除单选select小图标旋转
+    .ant-select-open .ant-select-arrow:before {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+}
+.dropdownfilterLabel {
+  :global {
+    .ant-select-dropdown-menu-item {
+      font-size: 14px;
+      color: #333;
+    }
+    .ant-select-dropdown-menu-item.ant-select-dropdown-menu-item-selected {
+      background: #ecf6fd;
+      color: #333;
+      font-weight: normal;
+    }
+  }
+}
+.overflowAction {
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

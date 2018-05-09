@@ -1,0 +1,138 @@
+/**
+* @file fspSrc/css/fspFix.less
+* 用来规范fsp页面在新框架中的样式
+* @author zhufeiyang
+*/
+@btn-bg-color: #348cf0;
+@navbar-color: #2e669a;
+:global {
+  // 投诉工单管理的tab可点击，修正鼠标图标
+  #dataList_custcenter_custComplantList {
+    cursor: pointer;
+  }
+
+  // 按钮样式
+  .eb-richbtn.richbtn-color-1 {
+    background-color: @btn-bg-color !important;
+    border-color: @btn-bg-color !important;
+    &:hover {
+      background-color: @btn-bg-color !important;
+      border-color: @btn-bg-color !important;
+    }
+  }
+
+  .eb-richbtn.richbtn-color-1[disabled],
+  .eb-richbtn.richbtn-color-1[disabled]:hover {
+    background-color: #e7eaec !important;
+    border-color: #e7eaec !important;
+    cursor: not-allowed;
+  }
+
+  // label 样式
+  .view-switcher > .eb-panel-content .eb-richinput-radio > .options > input[type="radio"]:checked + label,
+  .view-switcher > .eb-panel-content .eb-richinput-radio > .options > input[type="checkbox"]:checked + label {
+    background-color: @btn-bg-color !important;
+    border-color: @btn-bg-color !important;
+  }
+
+  // 分页按钮样式
+  .eb-datatable > .pagination > li > button.num-btn[disabled] {
+    color: #fff !important;
+    background-color: @btn-bg-color !important;
+    border-color: @btn-bg-color !important;
+    cursor: not-allowed;
+  }
+
+  .eb-datatable > .pagination > li > button:hover {
+    color: @btn-bg-color !important;
+    background-color: #f2f2f2 !important;
+    border: 1px solid #f2f2f2 !important;
+    cursor: pointer;
+  }
+
+  // tab切换底部border样式
+  .nav-tabs > li.active > a {
+    border-color: @btn-bg-color !important;
+  }
+
+  .nav-tabs > li > a:hover {
+    border-color: @btn-bg-color !important;
+  }
+
+  // 列表小圆点
+  .fa.fa-circle.red {
+    color: @btn-bg-color !important;
+  }
+
+  // 下拉菜单当前选中项
+  .eb-richinput.eb-richinput-select > .btn-group > .multiselect-container li.active a,
+  .eb-richinput.eb-richinput-multiSelect > .btn-group > .multiselect-container li.active a {
+    color: #fff !important;
+    background-color: @btn-bg-color !important;
+  }
+
+  // 镂空按钮
+  .eb-panel > .eb-panel-title .eb-richbtn.richbtn-color-spec,
+  .eb-richbtn.richbtn-color-spec {
+    background-color: white !important;
+    border: 1px solid @btn-bg-color !important;
+    color: @btn-bg-color !important;
+    &:hover {
+      color: #fff !important;
+      background-color: @btn-bg-color !important;
+      border-color: @btn-bg-color !important;
+    }
+  }
+
+  // 客户360 顶部按钮
+  .spec-btn,
+  .eb-panel > .eb-panel-title .eb-richbtn,
+  .button-group.spec .eb-richbtn,
+  .spec.button-group-left .eb-richbtn,
+  .spec.button-group-right .eb-richbtn {
+    color: #fff !important;
+    background-color: @btn-bg-color !important;
+    border-color: @btn-bg-color !important;
+  }
+
+  // 导航条背景颜色
+  .view360-tabs-main.nav-tabs {
+    background-color: @navbar-color !important;
+  }
+    // 客户360 导航项样式
+  .view360-tabs-main.nav-tabs > li {
+    border-left: 1px solid @navbar-color;
+  }
+  // 客户360 次级tab样式
+  .view360-tabs-main.tkzfp.nav-tabs {
+    background-color: transparent !important;
+    border-bottom: 2px solid @btn-bg-color;
+  }
+  // 客户360次级导航项样式
+  .view360-tabs-main.tkzfp.nav-tabs > li.active > a {
+    background-color: @btn-bg-color !important;
+  }
+  // 原搭配的图片去掉
+  .view360-tabs-main.tkzfp.nav-tabs > li.active > a > .suffix {
+    background-image: none !important;
+  }
+  // 面板样式
+  .view360-accordion > .panel > .panel-heading {
+    border-left: 4px solid  @btn-bg-color !important;
+  }
+
+  // 查询条件的搜索图标背景
+  .grouped-icon-btn:hover,
+  .eb-richinput.eb-richinput-upload .eb-richbtn:hover,
+  .input-button-group .eb-richbtn:hover {
+    color: #fff !important;
+    background-color: @btn-bg-color !important;
+    border-color: @btn-bg-color !important;
+  }
+
+  // 按钮组对齐方式
+  .btn-group, .btn-group-vertical {
+    vertical-align: baseline !important;
+  }
+}
+

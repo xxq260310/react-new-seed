@@ -1,0 +1,170 @@
+.task_title {
+  font-size: 15px;
+  color: #4a4a4a;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0 17px;
+  b {
+    color: #ff784e;
+  }
+}
+.task_from {
+  font-size: 12px;
+  padding: 20px 0;
+  .info {
+    color: #666;
+    font-size: 12px;
+  }
+  .task_selectList {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    li {
+      position: relative;
+      float: left;
+      width: 33%;
+      .task_label {
+        vertical-align: middle;
+        line-height: 32px;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        float: left;
+        padding-right: 15px;
+        font-size: 12px;
+        color: #666;
+        width: 110px;
+        text-align: right;
+      }
+      .required_i {
+        color: #f00;
+        font-style: normal;
+      }
+      :global {
+        .ant-form-item-label {
+          label {
+            font-size: 12px;
+            color: #666;
+          }
+        }
+        .ant-select-selection {
+          &:hover {
+            border-color: #49a9ee;
+          }
+          &:active, &:focus {
+            border-color: #49a9ee;
+            outline: 0;
+            box-shadow: 0 0 0 2px rgba(16, 142, 233, .2);
+          }
+        }
+        .has-error .ant-form-explain, .has-error .ant-form-split {
+          white-space: nowrap;
+        }
+        .ant-input-number-input-wrap {
+          line-height: 30px;
+        }
+        .timelyIntervalValueItem {
+          :global {
+            .ant-input-number-input:after {
+              margin-left: 10px;
+              content: '有效期自任务审批通过后开始计算';
+              display: inline-block;
+            }
+            .tip {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .hint {
+        position: absolute;
+        top: 6px;
+        right: -95px;
+      }
+    }
+  }
+  .task_textArea {
+    p {
+      padding: 5px 15px 5px 0;
+      float: left;
+      width: 110px;
+      text-align: right;
+      label {
+        font-size: 12px;
+        color: #666;
+        i {
+          font-style: normal;
+          color: #f00;
+        }
+      }
+    }
+    :global {
+      .ant-row {
+        margin-left: 110px;
+      }
+    }
+  }
+}
+
+.pageFoot {
+  padding: 20px;
+  text-align: right;
+}
+.submitBtn {
+  text-align: right;
+  button {
+    margin-left: 15px;
+  }
+}
+
+:global {
+  @-webkit-keyframes loadingCircle {
+    0% {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    to {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+
+  @keyframes loadingCircle {
+    0% {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    to {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+  span.insert {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    font-size: 12px;
+    color: #108ee9;
+    cursor: pointer;
+  }
+}
+.row {
+  width: 100%;
+  height: 100px;
+}

@@ -1,0 +1,193 @@
+.compareDiv {
+  display: inline-block;
+  margin-left: 10px;
+}
+.pickerFootRadio {
+  flex: 1;
+  padding: 20px 0 20px 18px;
+}
+.pickerFootCustom {
+  width: 155px;
+  padding: 20px 0;
+  text-align: center;
+  line-height: 26px;
+  a {
+    display: inline-block;
+    width: 90px;
+    height: 28px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: @invest-btn-text-color;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+}
+.maskPickerTime {
+  position: absolute;
+  top: 36px;
+  background: white;
+  z-index: 1051;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  text-align: left;
+  font-size: 12px;
+  text-indent: 14px;
+  border-radius: 4px;
+  transition: .4s;
+}
+:global {
+  .react-app {
+    .durationSelect {
+      position: relative;
+      box-sizing: border-box;
+      display: inline-block;
+      height: 24px;
+      width: auto;
+      vertical-align: middle;
+      .ant-calendar-picker {
+        display: none;
+      }
+      .ant-calendar-picker-container,
+      .ant-calendar-picker-container-placement-bottomLeft {
+        left: 0 !important;
+        top: 38px !important;
+      }
+      .ant-calendar-range-middle {
+        margin-left: -166px;
+        color: #fff !important;
+        &:after {
+          content: "-";
+          margin-left: -10px;
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.65);
+        }
+      }
+      .ant-calendar-range-right .ant-calendar-date-input-wrap {
+        margin-left: -157px;
+      }
+      .ant-calendar-range .ant-calendar-input,
+      .ant-calendar-range .ant-calendar-time-picker-input {
+        padding: 4px 0;
+      }
+      .duration {
+        width: auto;
+        height: 24px;
+        cursor: pointer;
+        line-height: 22px;
+        user-select: none;
+        i {
+          margin-right: 6px;
+        }
+        .anticon {
+          margin-top: 3px;
+          font-size: 14px;
+          vertical-align: middle;
+        }
+        .text {
+          width: 220px;
+          height: 24px;
+          display: inline-block;
+          color: #4c4c4c;
+          font-size: 14px;
+          text-align: left;
+          vertical-align: middle;
+          span {
+            margin: 0 5px;
+          }
+        }
+      }
+      .durationPicker,.hasHistoryPicker {
+        position: absolute;
+        z-index: 11;
+        top: 37px;
+        left: 0;
+        width: 370px;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 10px 29px 0 rgb(138, 133, 133);
+        .pickerHead {
+          padding: 4px 7px;
+          width: 100%;
+          height: 34px;
+          line-height: 26px;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.65);
+          text-align: left;
+        }
+        .divider {
+          width: 100%;
+          height: 1px;
+          background-color: #ddd;
+        }
+        .pickerFoot {
+          display: flex;
+          flex-direction: normal;
+        }
+      }
+
+      .hide {
+        display: none;
+      }
+    }
+  }
+}
+
+@invest-btn-base-color: #1eaaf1;
+@invest-btn-text-color: #777;
+@invest-btn-text-hvr-color: @invest-btn-base-color;
+@invest-btn-border-color: #ddd;
+@invest-btn-border-hvr-color: @invest-btn-base-color;
+
+:global {
+  .react-app {
+    .ant-radio-group {
+      vertical-align: middle;
+    }
+    .ant-radio-button-wrapper {
+      float: left;
+      padding: 0;
+      width: 60px;
+      height: 28px;
+      z-index: 1;
+      margin: 10px 10px 0 -1px;
+      color: @invest-btn-text-color;
+      text-align: center;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      &:not(:nth-child(n + 4)) {
+        margin-top: 0;
+      }
+      &:first-child,
+      &:last-child {
+        border-radius: 4px;
+      }
+      &:hover {
+        z-index: 2;
+        color: @invest-btn-text-hvr-color;
+        border-color: @invest-btn-border-hvr-color;
+      }
+      &:not(:first-child):before {
+        display: none;
+      }
+    }
+    .ant-radio-button-wrapper-checked {
+      border-color: @invest-btn-base-color;
+      color: #fff;
+      background-color: @invest-btn-base-color;
+      box-shadow: none;
+      &:first-child {
+        border-color: @invest-btn-base-color;
+      }
+      &:hover {
+        color: #fff;
+        border-color: @invest-btn-base-color;
+        box-shadow: none;
+      }
+    }
+  }
+}

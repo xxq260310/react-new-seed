@@ -1,0 +1,37 @@
+.basicInfo {
+  margin-top: 13px;
+  .basicInfoContent {
+    padding: 10px 0 30px;
+    border-bottom: 1px solid #c2c2c2;
+    display: flex;
+    flex-wrap: wrap;
+    .coloumn {
+      display: flex;
+      flex-grow: 1;
+      margin-top: 5px;
+      margin-right: 20px;
+      min-width: 340px;
+      .infoKey {
+        min-width: 98px;
+        text-align: right;
+        font-size: 14px;
+        color: #9b9b9b;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .keyNone {
+        display: none;
+      }
+      .infoValue {
+        font-size: 14px;
+        color: #4a4a4a;
+        margin-left: 16px;
+        word-break: break-all;
+      }
+    }
+  }
+  .row {
+    width: 100%;
+  }
+}

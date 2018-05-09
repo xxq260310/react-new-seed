@@ -1,0 +1,21 @@
+.reportScrollBar {
+  position: fixed;
+  bottom: 10px;
+  width: 1000px;
+  height: 15px;
+  z-index: 999;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  left: 20px;
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.6) !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+  .reportScrollBarInner {
+    width: 5000px;
+    height: 15px;
+  }
+}

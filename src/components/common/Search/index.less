@@ -1,0 +1,77 @@
+.autoCompleteDropdown {
+  :global {
+    .ant-select-dropdown-menu li em {
+      color: #fdb02b;
+      font-style: normal;
+    }
+    .ant-select-dropdown-menu li .desc {
+      padding-left: 10px;
+      color: #c2c2c2;
+    }
+    .ant-select-dropdown-menu li .ant-select-dropdown-menu-item-group-title span {
+      padding: 0;
+    }
+  }
+}
+.delHistory_a {
+  float: right;
+}
+.searchBox {
+  background: #fff;
+  .delHistory_a {
+    float: right;
+    color: #c2c2c2;
+    font-size: 12px;
+    i {
+      margin-right: 5px;
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+  }
+  .inner {
+    // padding: 40px 0 0;
+  }
+  .inputBox {
+    padding-bottom: 15px;
+    margin: auto;
+  }
+  .searchBtn {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 7px;
+  }
+  .autoCompleteWrapper {
+    height: 30px;
+    width: 190px;
+    :global {
+      .ant-select-lg .ant-select-selection--single,
+      .ant-select-auto-complete.ant-select-lg .ant-input,
+      .ant-btn-lg {
+        height: 44px;
+      }
+      .ant-select-auto-complete .ant-select-selection--single {
+        margin-right: -46px;
+      }
+      .ant-select-auto-complete .ant-input-affix-wrapper .ant-input:not(:last-child) {
+        padding-right: 62px;
+      }
+      .ant-input-affix-wrapper .ant-input-suffix {
+        top: 55%;
+        & > .anticon-search {
+          font-size: 14px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+  .addBtnClass {
+    margin-left: 10px;
+    background-color: white;
+    border-color: #108ee9;
+    color: #108ee9;
+  }
+  .autoCompleteDropdown {
+    display: block;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../../src/css/util.less";
+.position {
+  width: 100px;
+  margin-left: 28px;
+  cursor: pointer;
+}
+.empRsp,
+.empName {
+  font-size: 12px;
+  color: #fff;
+}
+.empRsp {
+  .text-overflow-ellipsis()
+}
+.empRspItem {
+  display: inline-block;
+  width: 100%;
+  .text-overflow-ellipsis();
+  :global {
+   .iconfont {
+      font-family: "fspIconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      vertical-align: middle;
+    }
+   .icon-tuichu:before {  content: "\e643"; }
+  }
+}

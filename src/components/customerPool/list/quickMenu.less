@@ -1,0 +1,36 @@
+.basicInfoD {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  font-size: 12px;
+  .operationIcon {
+    padding: 0 0 0 10px;
+    height: 16px;
+    line-height: 16px;
+    .follows, .follows i {
+      color: #108ee9;
+    }
+    li {
+      border-right: 1px solid #ddd;
+      display: inline-block;
+      padding: 0 10px;
+      cursor: pointer;
+      &:hover {
+        i, span, a {
+          color: #108ee9;
+        }
+      }
+      a {
+        color: #777;
+      }
+      i {
+        margin-right: 5px;
+        vertical-align: top;
+        color: #c2c2c2;
+      }
+    }
+    li:last-child {
+      border-right: none;
+    }
+  }
+}

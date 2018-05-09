@@ -1,0 +1,120 @@
+.taskBox {
+  .taskInner {
+    // display: none;
+    padding: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+    .taskcontent {
+      padding: 10px;
+      background: #fff;
+      .task_title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #33393c;
+        border-bottom: 1px solid #ddd;
+        padding: 5px 0 10px;
+        b {
+          color: #ff784e;
+        }
+      }
+      .task_from {
+        font-size: 14px;
+        padding: 20px 0;
+        .info {
+          color: #ff784e;
+          font-size: 14px;
+        }
+        .task_selectList {
+          overflow: hidden;
+          li {
+            position: relative;
+            float: left;
+            width: 33%;
+            .task_label {
+              text-align: right;
+              vertical-align: middle;
+              line-height: 32px;
+              display: inline-block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              float: left;
+              padding-right: 5px;
+              font-size: 14px;
+              color: #666;
+            }
+            .required_i {
+              color: #f00;
+              font-style: normal;
+            }
+            :global {
+              .ant-form-item-label {
+                label {
+                  font-size: 14px;
+                  color: #666;
+                }
+              }
+              .has-error .ant-form-explain, .has-error .ant-form-split {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+        .task_textArea {
+          p {
+            padding: 5px 0;
+            label {
+              font-size: 14px;
+              color: #666;
+              i {
+                font-style: normal;
+                color: #f00;
+              }
+            }
+          }
+        }
+        .task_btn {
+          text-align: right;
+          button {
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+:global {
+  @-webkit-keyframes loadingCircle {
+    0% {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    to {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+
+  @keyframes loadingCircle {
+    0% {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    to {
+      -webkit-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+}

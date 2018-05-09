@@ -1,0 +1,28 @@
+.commomSelect {
+  display: inline-block;
+  :global {
+    // 兼容ie下拉图标旋转样式
+    .ant-select-arrow {
+      transform: scale(0.75);
+    }
+    //多选下拉小图标样式
+    .ant-select-arrow:before {
+      content: "";
+      height: 0;
+      position: absolute;
+      right: 2px;
+      top: 5px;
+      width: 0;
+      border: none;
+      border-top: 10px solid #c2c2c2;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+    //清除单选select小图标旋转
+    .ant-select-open .ant-select-arrow:before {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+}

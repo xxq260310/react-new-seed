@@ -1,0 +1,76 @@
+:global {
+  .react-app {
+    .uploadBox {
+      padding: 12px 0;
+      width: 300px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: start;
+      .upload_txt {
+        font-size: 14px;
+        padding: 10px 0;
+        padding: 5px 0;
+        color: #108ee9;
+      }
+      .ant-upload.ant-upload-drag {
+        height: 30px;
+      }
+      .upload_txt:hover {
+        color: #108ee9;
+      }
+      & > .previewSection {
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // margin-left: 20px;
+        margin-top: 5px;
+        .uploadedFile {
+          display: block;
+          font-size: 13px;
+          color: #666;
+          margin-right: 10px;
+          & > span {
+            margin-left: 5px;
+          }
+          & > .excelIcon, .csvIcon {
+            width: 14px;
+            height: 14px;
+            color: #01723e;
+          }
+        }
+        .overview {
+          display: block;
+          font-size: 13px;
+          color: #108ee9;
+          margin-right: 10px;
+          cursor: pointer;
+          margin-left: 30px;
+        }
+        .delete {
+          display: block;
+          font-size: 13px;
+          color: #108ee9;
+          cursor: pointer;
+        }
+      }
+      .uploadBtn {
+        padding: 0 16px;
+        margin-left: 10px;
+      }
+    }
+    .errorInfo {
+      color: red;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .ant-confirm-body {
+      .ant-confirm-title {
+        font-size: 16px;
+      }
+      .ant-confirm-content {
+        font-size: 14px;
+      }
+    }
+  }
+}

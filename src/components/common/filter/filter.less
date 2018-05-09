@@ -1,0 +1,59 @@
+// 筛选标题所占的宽度
+@leftInstance: 80px;
+.filter {
+  position: relative;
+  // padding: 0 25px;
+  min-height: 26px;
+  line-height: 26px;
+  // border-top: 1px dashed #ddd;
+  &:first-child {
+    border-top: 0;
+  }
+  .moreBtn {
+    position: absolute;
+    right: 0;
+    color: #108ee9;
+    :global {
+      .icon-more-down-copy {
+        display: inline-block;
+        font-weight: bold;
+        transition: transform 0.2s ease;
+        transform: rotate(0deg);
+        &.up {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  :global {
+    span {
+      float: left;
+      text-align: left;
+      font-size: 12px;
+      color: #a1a1a1;
+      width: 100px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    ul {
+      margin-left: @leftInstance;
+      margin-right: 60px;
+      // width: 618px;
+      overflow: hidden;
+      li {
+        float: left;
+        margin: 0 10px;
+        color: #666;
+        font-size: 12px;
+        cursor: pointer;
+        &.current {
+          color: #ff784e;
+        }
+        &:hover {
+          color: #ff784e;
+        }
+      }
+    }
+  }
+}

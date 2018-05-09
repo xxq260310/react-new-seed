@@ -1,0 +1,175 @@
+
+// 修改头部Select样式
+:global {
+  .react-app {
+    .feedbackHeader {
+      position: fixed;
+      z-index: 10;
+      padding: 0 20px;
+      width: 100%;
+      // height: 54px;
+      // line-height: 54px;
+      background-color: #fff;
+      font-size: 14px;
+      color: #c2c2c2;
+      white-space: nowrap;
+      // box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.05);
+      .ant-select,
+      .ant-cascader-picker,
+      .ant-calendar-picker {
+        color: #33393c;
+        font-size: 14px;
+        margin-right: 20px;
+      }
+      .ant-cascader-picker {
+        vertical-align: middle;
+        margin-top: -5px;
+      }
+      .ant-select .ant-select-selection__rendered div,
+      .ant-cascader-picker input {
+        color: #33393c;
+        font-size: 14px;
+      }
+      .ant-calendar-range-picker-input {
+        color: #33393c;
+        font-size: 12px;
+        overflow: hidden;
+      }
+      .ant-select-selection,
+      .ant-calendar-picker-input,
+      .ant-input.ant-cascader-input {
+        background-color: transparent;
+        border-color: transparent;
+        .ant-select-selection__choice {
+          background-color: transparent;
+        }
+      }
+      .ant-select-selection--multiple > ul > li,
+      .ant-select-selection--multiple .ant-select-selection__rendered > ul > li {
+          margin-bottom: 3px;
+          margin-top: 1.2px;
+          &:nth-last-child(2) {
+            &:after {
+              display: none;
+            }
+          }
+      }
+      .ant-select-selection--multiple .ant-select-selection__choice {
+        margin-right: 0;
+        padding: 0 10px 0 0;
+        position: relative;
+        &:after {
+          content: "，";
+          position: absolute;
+          top: 0;
+          right: -1px;
+        }
+      }
+      .ant-select-selection__placeholder,
+      .ant-select-search__field__placeholder,
+      .ant-cascader-picker input::-webkit-input-placeholder,
+      .ant-calendar-picker input::-webkit-input-placeholder {
+        color: #33393c;
+        font-size: 14px;
+      }
+      .ant-select-selection__rendered ul {
+        &:after {
+        border: 4px solid transparent;
+        border-top-color: #c2c2c2;
+        content: "";
+        height: 0;
+        position: absolute;
+        right: 5px;
+        top: 9px;
+        width: 0;
+        }
+      }
+      .ant-select-selection--multiple .ant-select-selection__rendered {
+        height: 22px;
+        line-height: 22px;
+        margin-bottom: -6px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .ant-select-selection--multiple .ant-select-selection__clear {
+          top: 12px;
+          right: 5px;
+      }
+
+      //日期input溢出隐藏
+      .ant-calendar-picker input {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .ant-calendar-picker-clear {
+        right: 1px;
+      }
+      //多选下拉小图标样式
+      .ant-cascader-picker .anticon-down:before,
+      .ant-select-arrow:before {
+        border: 4px solid transparent;
+        border-top-color: #c2c2c2;
+        content: "";
+        height: 0;
+        position: absolute;
+        right: 2px;
+        top: 5px;
+        width: 10px;
+      }
+      .ant-calendar-picker-icon:after {
+        border: 4px solid transparent;
+        border-top-color: #c2c2c2;
+        content: "";
+        height: 0;
+        position: absolute;
+        right: -5px;
+        top: 3px;
+      }
+      //清楚单选select和级联选择小图标旋转
+      .ant-cascader-picker-arrow.ant-cascader-picker-arrow-expand:before,
+      .ant-select-open .ant-select-arrow:before {
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      .ant-select-allow-clear .ant-select-selection--multiple .ant-select-selection__rendered {
+        margin-right: 0;
+      }
+      .ant-calendar-picker:hover .ant-calendar-picker-input:not([disabled]) {
+        border-color: rgba(16, 142, 233, 0.2);
+        outline: 0;
+        box-shadow: 0 0 0 1px rgba(16, 142, 233, 0.2);
+      }
+      .cascader_box {
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        width: 120px;
+        padding: 0 0 0 5px;
+      }
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      /* IE10-specific styles go here */
+        .ant-cascader-picker {
+          position: absolute;
+          top: -20px;
+        }
+        .ant-cascader-picker-arrow-expand {
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        .ant-cascader-picker-arrow.ant-cascader-picker-arrow-expand {
+          top: 28px;
+          right: 18px;
+        }
+        .ant-cascader-picker-arrow.ant-cascader-picker-arrow-expand:before,
+        .ant-select-open .ant-select-arrow:before {
+            top: -10px;
+            right: -10px;
+        }
+      }
+    }
+  }
+}

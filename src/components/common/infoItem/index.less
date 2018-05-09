@@ -1,0 +1,28 @@
+.wrap {
+  width: 100%;
+  margin: 10px 0;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  .label {
+    float: left;
+    width: 160px;
+    font-size: 14px;
+    color: #9b9b9b;
+    text-align: right;
+    margin-right: -160px;
+    .colon {
+      padding: 0 4px;
+    }
+  }
+  .value {
+    margin-left: 160px;
+    padding-left: 20px;
+    float: left;
+    font-size: 14px;
+    color: #333;
+  }
+}

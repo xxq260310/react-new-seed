@@ -1,0 +1,38 @@
+.mainFilter {
+  padding: 5px 20px;
+  .filterSection {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 38px;
+    .filter {
+      flex: 0 0 auto;
+      margin-right: 15px;
+      padding: 5px 0;
+      align-self: baseline;
+      &.hidden {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .filterSectionMore {
+    display: flex;
+    flex-wrap: wrap;
+    .filter {
+      flex: 0 0 auto;
+      margin-right: 15px;
+      padding: 5px 0;
+      align-self: baseline;
+      &.hidden {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

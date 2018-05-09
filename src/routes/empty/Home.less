@@ -1,0 +1,82 @@
+.wrapper {
+  // test
+  background: #fff !important;
+  margin: 0 20px;
+  padding: 50px 0 200px;
+  border-bottom: 1px solid #e9e9e9;
+  .title {
+    margin: 15px 0 0;
+    line-height: 14px;
+    text-indent: 15px;
+    font-size: 14px;
+    color: #333;
+    border-left: 4px solid #348cf0;
+  }
+  .fileListMain {
+    .fileList {
+      font-size: 13px;
+      color: #666;
+      // background: #ccc;
+      background: #f7f7f7;
+      border: 1px solid #e9e9e9;
+      .fileItem {
+        margin: 0 28px;
+        height: 49px;
+        position: relative;
+        p {
+          i {
+            font-size: 18px;
+            margin: 0 15px 0 0;
+          }
+          line-height: 49px;
+        }
+      }
+    }
+    .upload {
+      border: 1px dashed #e9e9e9;
+      background: transparent;
+      border-radius: 2px;
+      width: 278px;
+      height: 42px;
+      margin-top: 20px;
+    }
+    .noFile {
+      line-height: 49px;
+      text-indent: 28px;
+    }
+  }
+  :global {
+    .ant-progress {
+      position: absolute;
+      bottom: 14px;
+      height: 4px;
+      .ant-progress-outer {
+        height: 4px;
+      }
+      .ant-progress-text {
+        visibility: hidden;
+      }
+    }
+    .ant-popover-arrow,
+    .ant-popover-arrow:after {
+      border-right-color: transparent !important;
+    }
+    .ant-popover-inner {
+      border: 1px solid #d9d9d9;
+      width: 302px;
+      height: 102px;
+      border-radius: 3px;
+      .ant-popover-inner-content {
+        line-height: 28px;
+        p {
+          span {
+            float: right;
+          }
+          .fileListItemSize {
+            color: #f5a623;
+          }
+        }
+      }
+    }
+  }
+}

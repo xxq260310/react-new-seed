@@ -1,0 +1,277 @@
+@import '../../../css/variable.less';
+
+.missionInvestigationContainer {
+  margin-top: 30px;
+  & > .title {
+    display: block;
+    font-size: 15px;
+    color: #4a4a4a;
+    :global {
+      .ant-checkbox-wrapper {
+        span:last-child {
+          vertical-align: middle;
+          font-size: 15px;
+          color: #4a4a4a;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  & > .divider {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-top: 17px;
+    margin-bottom: 14px;
+  }
+  & > .container {
+    & > .description {
+      margin-bottom: 27px;
+      font-size: 14px;
+    }
+    & > .questionLine {
+      margin-bottom: 10px;
+      & > .questionIndex {
+        font-size: 14px;
+      }
+      & > .questionTitle {
+        font-size: 14px;
+        color: #4a4a4a;
+      }
+      :global {
+        .ant-select {
+          min-width: 100px;
+          max-width: 200px;
+          height: 28px;
+        }
+        .ant-select-selection-selected-value {
+          font-size: 14px;
+          line-height: 28px;
+          color: #4a4a4a;
+        }
+      }
+      & > .detailLabel {
+        margin-left: 10px;
+        font-size: 14px;
+        color: #108ee9;
+      }
+      & > .deleteIcon {
+        margin-left: 10px;
+        color: #2782d7;
+        cursor: pointer;
+        margin-top: 5px;
+      }
+    }
+  }
+  & > .errBox {
+    margin-bottom: -15px;
+    font-size: 12px;
+    color: #f04134;
+  }
+  & > .operationSection {
+    display: block;
+    font-size: 12px;
+    color: #108ee9;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px dashed #c2c2c2;
+    width: 100px;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+  }
+  & > .disabledAdd {
+    background: #f7f7f7;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+  }
+}
+.problemListModalContainer {
+  .modalContainer {
+    margin: 0 auto;
+    width: 568px;
+    .emptyContent {
+      .emptyContent;
+    }
+    :global {
+      .selfPagination {
+        margin-right: 0;
+      }
+    }
+  }
+  .problemListTable {
+    padding: 0 !important;
+    width: 568px;
+    :global {
+      .ant-table {
+        border-radius: 0;
+      }
+    }
+    table {
+      border: 1px solid #ccc;
+    }
+    table > thead > tr > th, tbody > tr > td {
+      padding: 0;
+      font-size: 12px;
+      color: #4a4a4a;
+      height: 60px;
+      overflow: hidden;
+      line-height: 20px;
+    }
+    table > tbody > tr > td:last-child {
+      text-overflow: ellipsis;
+      height: 60px;
+      overflow: hidden;
+      line-height: 20px;
+    }
+    table > tbody > tr > td:last-child > span {
+      height: 60px;
+      line-height: 20px;
+    }
+    table > tbody > tr:nth-child(odd) {
+      background-color: #fff;
+    }
+    tbody > tr > td > div,  tbody > tr > th:not(:last-child) {
+      margin: 0;
+      word-break: break-all;
+      border-bottom: 1px solid #ccc;
+    }
+
+    table > thead > tr > th {
+      background-color: #f7f7f7;
+    }
+
+    :global {
+      .emptyRow {
+        pointer-events: none;
+        cursor: none;
+        :global {
+          // 空白行，清除选中项
+          .ant-checkbox-wrapper {
+            display: none;
+          }
+        }
+      }
+      .column {
+        max-width: fit-content;
+        overflow: hidden;
+        text-overflow: unset;
+        white-space: normal;
+        display: inline;
+      }
+      .ant-table-selection-column {
+        width: 68px;
+        text-align: center !important;
+      }
+      .ant-table-tbody > tr > td {
+        border-bottom: 1px solid #ccc;
+      }
+      .ant-table-tbody > tr:last-child > td {
+        border-bottom: 0;
+      }
+    }
+  }
+  // 保证弹框距离底部10px
+  // 距离顶部50px
+  :global {
+    .ant-modal {
+      overflow-y: hidden;
+      height: e("calc(100vh - 50px)");
+      padding-bottom: 0;
+      width: 649px !important;
+      top: 40px;
+      max-height: 622px;
+    }
+    .ant-modal-content {
+      height: 100%;
+    }
+    .ant-modal-body {
+      overflow-y: scroll;
+      height: e("calc(100vh - 150px)");
+      max-height: 522px;
+    }
+    .ant-modal-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+    .ant-modal-close-x {
+      font-size: 18px;
+      color: #333;
+    }
+  }
+}
+.btnSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.confirmBtn {
+  margin-left: 10px;
+}
+.questionSelect {
+  display: block;
+}
+.selectStyle {
+  :global {
+    .ant-select-dropdown-menu-item {
+      max-width: 200px;
+      text-overflow: ellipsis;
+    }
+  }
+}
+.detailTip {
+  background: #ffffcd;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px 0 rgba(153, 153, 153, 0.50);
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 12px;
+  color: #4a4a4a;
+  & > .questionSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    & > div:first-child {
+      min-width: 45px;
+    }
+    & > div:last-child {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  & > .answerSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    overflow: hidden;
+    & > .title {
+      min-width: 45px;
+    }
+    & > .content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      & > div {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+      }
+    }
+  }
+}
+.questionAndAnswer {
+  :global {
+    .ant-tooltip-inner {
+      padding: 0;
+    }
+    .ant-tooltip-arrow {
+      display: none;
+    }
+  }
+}
+

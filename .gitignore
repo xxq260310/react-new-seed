@@ -1,0 +1,15 @@
+node_modules
+.DS_Store
+npm-debug.log
+npm-debug.log.*
+.*.swp
+.*.swo
+output
+dist
+iconfont.js
+iconfont.css
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+.editorconfig

@@ -1,0 +1,19 @@
+.popmask {
+  position: fixed;
+  top: 98px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(236, 246, 253, 0.5);
+  z-index: 300;
+
+  :global {
+    .ant-spin {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

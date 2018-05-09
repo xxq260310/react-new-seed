@@ -1,0 +1,41 @@
+.container {
+  margin: 100px auto;
+  width: 64%;
+  overflow: hidden;
+  &.hide {
+    display: none;
+  }
+}
+.item {
+  width: 198px;
+  height: 218px;
+  border: 1px solid #979797;
+  border-radius: 3px;
+  text-align: center;
+  color: #c2c2c2;
+  cursor: pointer;
+  .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 60px !important;
+  }
+  .iconTxt {
+    font-size: 12px;
+  }
+}
+.item:hover {
+  border-color: #108ee9;
+  .icon {
+    color: #108ee9;
+  }
+  .iconTxt {
+    color: #108ee9;
+  }
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}

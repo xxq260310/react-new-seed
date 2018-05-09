@@ -1,0 +1,153 @@
+@import '../../../css/variable.less';
+
+.detailBox {
+  .clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+  }
+  background-color: #f3f3f4;
+  height: 100%;
+  box-shadow: 5px 5px 5px #ededee;
+  h1,
+  h2,
+  h3 {
+    color: #33393c;
+    font-size: 14px;
+  }
+  .inner {
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    height: 100%;
+    overflow: auto;
+    .innerWrap {
+      // 不晓得为啥加最小宽度，导致x轴方向出现滚动条，不合理
+      // min-width: 650px;
+    }
+    .modContent {
+      & > div {
+        padding-left: 15px;
+        margin: 5px 0;
+        & > span:first-child, & > h4:first-child {
+          font-size: 14px;
+          color: #9b9b9b;
+          text-align: left;
+          display: inline-block;
+          width: 75px;
+        }
+        & > span:last-child, & > h4:last-child {
+          font-size: 14px;
+          // color: #9b9b9b;
+          text-align: left;
+          display: inline-block;
+          // float: left;
+          max-width: 90%;
+          line-height: 25px;
+          vertical-align: top;
+          word-break: break-all;
+        }
+        .seeCust {
+          margin-left: 8px;
+        }
+        .excel {
+          color: #01723e;
+        }
+      }
+      & > div.rowWidth {
+        & > span:first-child {
+          width: 100px;
+        }
+      }
+    }
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      .bugTitle {
+        padding: 0 0 15px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 80%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .editTask {
+        width: 20%;
+        color: #108ee9;
+        font-size: 15px;
+        text-align: right;
+        height: 37px;
+        cursor: pointer;
+      }
+    }
+    .emptyHeader {
+      width: 20%;
+      border-bottom: 1px solid #ccc;
+    }
+    .module {
+      padding: 15px 0;
+      border-bottom: 1px solid #e9e9e9;
+      h2 {
+        font-weight: normal;
+        line-height: 1.5;
+      }
+    }
+    .lastModule {
+      padding: 15px 0;
+       h2 {
+        font-weight: normal;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+.quesRight {
+  margin-right: 15px;
+}
+.rowBottom {
+  margin-bottom: 10px;
+}
+.custListTable {
+  text-align: center;
+  table > thead > tr > th, tbody > tr > td {
+    padding: 7px 0 7px 8px !important;
+    text-align: center !important;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+    color: #727272;
+  }
+  table > tbody > tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  tbody > tr > td > span:last-child,  tbody > tr > th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+    max-width: 105px;
+  }
+  table > thead > tr > th {
+    background-color: #f7f7f7;
+  }
+  table > tbody > tr > td {
+    border-bottom: 1px solid #e9e9e9 !important;
+  }
+  :global {
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+      background-color: #fff;
+    }
+    .ant-table-header {
+        background: none;
+      }
+    .ant-table-tbody {
+      text-align: center;
+    }
+    .ant-table-scroll {
+      .scrollBarIEStyle;
+    }
+  }
+}

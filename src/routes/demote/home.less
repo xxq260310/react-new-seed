@@ -1,0 +1,49 @@
+/*
+ * @Description: 降级客户处理页面样式文件
+ * @Author: LiuJianShu
+ * @Date: 2017-12-06 14:53:26
+ * @Last Modified by: sunweibin
+ * @Last Modified time: 2017-12-25 16:25:04
+ */
+.demoteWrapper {
+  padding: 10px 20px;
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+  h2 {
+    font-size: 14px;
+    color: #333;
+    line-height: 16px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .btnDiv {
+    margin-top: 10px;
+    :global {
+      .commonBtn {
+        &:first-child {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  :global {
+    tr {
+      td {
+        padding: 13px 8px;
+      }
+    }
+    .ant-table-pagination {
+      float: right;
+    }
+    .ant-table-pagination .ant-pagination-item {
+      min-width: 22px;
+      height: 22px;
+      line-height: 22px;
+    }
+  }
+}

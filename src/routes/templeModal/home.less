@@ -1,0 +1,40 @@
+@import '../../css/variable.less';
+
+.tranfer {
+  padding: 20px;
+  background-color: #fff;
+}
+.result {
+  flex: display;
+  display: -webkit-flex; /* Safari */
+  align-items: center;
+  height: 28px;
+  line-height: 28px;
+  .nameLabel {
+    font-family: @font-family;
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+  .custIdLabel {
+    font-family: @font-family;
+    font-size: 14px;
+    color: #999;
+    margin-left: 8px;
+  }
+  .iconDiv {
+    margin-left: 12px;
+    border: 1px solid #ddd;
+    width: 17px;
+    height: 17px;
+    position: relative;
+    top: -1px;
+    .closeIcon {
+      position: relative;
+      top: -8px;
+      left: -0.5px;
+      font-size: 16px;
+      color: #4a90e2;
+      font-weight: 600;
+    }
+  }
+}

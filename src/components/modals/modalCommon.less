@@ -1,0 +1,146 @@
+@import "../../css/variable.less";
+.padMB {
+  margin-bottom: 40px;
+}
+.textCenter {
+  text-align: center;
+}
+.textLeft {
+  text-align: left;
+}
+.modalTipsText {
+  font-size: 15px;
+  line-height: 30px;
+  color: #666;
+}
+.modalDelTips {
+  composes: textLeft;
+  composes: modalTipsText;
+  margin-bottom: 20px;
+}
+.delModalName {
+  color: #e52e2e;
+  user-select: none;
+  word-break: break-all;
+}
+.modalPureTips {
+  composes: textCenter;
+  composes: padMB;
+  composes: modalTipsText;
+}
+.delDanger {
+  color: #fff;
+  border-color: #e52e2e;
+  background-color: #e52e2e;
+  &:active,
+  &:focus,
+  &:hover {
+    color: #fff;
+    border-color: lighten(#e52e2e, 10%);
+    background-color: lighten(#e52e2e, 10%);
+  }
+}
+:global {
+  .addMorningBoradcast {
+    .audioDesc {
+      vertical-align: middle;
+      margin: 0 4px;
+      line-height: 34px;
+    }
+    .ant-form-item {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.boardManageModal, .selectTreeModal {
+  div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, strong, .ant-form {
+    font-family: @font-family;
+  }
+  // background-color: blue;
+  .tooltipTop {
+    top: -35px !important;
+  }
+  :global {
+    .ant-form-item {
+      margin-bottom: 18px;
+    }
+    label {
+      font-size: 15px;
+    }
+    .ant-form-item-label,
+    .ant-form-item-control {
+      line-height: 35px;
+    }
+    .ant-select-lg .ant-select-selection--single {
+      height: 35px;
+    }
+    .ant-select-lg .ant-select-selection__rendered {
+      height: 33px;
+    }
+    .ant-select-selection-selected-value {
+      font-size: 15px;
+    }
+    .ant-input {
+      line-height: 35px;
+      font-size: 15px;
+      height: 35px;
+    }
+    .ant-select-selection--multiple > ul > li,
+    .ant-select-selection--multiple .ant-select-selection__rendered > ul > li {
+      margin-top: 5px;
+    }
+    .ant-modal {
+      width: 600px !important;
+    }
+    .ant-modal-header {
+      // background-color: #2a3f51;
+      background-color: #fff;
+    }
+    .ant-modal-close-x {
+      color: #333;
+      font-size: 30px;
+      font-weight: normal;
+      &:before {
+        content: "\e601";
+        font-family: "fspIconfont" !important;
+      }
+    }
+    .ant-modal-title {
+      // color: #fff;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+    .ant-modal-footer {
+      border-top: none;
+      text-align: center;
+      padding-top: 0;
+      padding-bottom: 40px;
+      .ant-btn-lg {
+        width: 120px;
+      }
+      & button + button {
+        margin-left: 70px;
+      }
+    }
+    .ant-modal-body {
+      padding: 40px 50px 0;
+    }
+  }
+}
+.selectTreeModal {
+  :global {
+    .ant-modal {
+      width: 1050px !important;
+      height: auto !important;
+      top: 30px !important;
+    }
+    .ant-modal-body {
+      padding: 20px 30px 0;
+    }
+    .ant-modal-footer {
+      padding-bottom: 18px;
+    }
+  }
+}

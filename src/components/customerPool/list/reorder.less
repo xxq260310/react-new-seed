@@ -1,0 +1,40 @@
+.reorder {
+  color: #666;
+  font-size: 12px;
+  overflow: hidden;
+  :global {
+    li {
+      display: inline-block;
+      padding: 0 20px;
+      height: 46px;
+      line-height: 46px;
+      cursor: pointer;
+      &.active {
+        background-color: #108ee9;
+        color: #fff;
+      }
+    }
+  }
+}
+.btn {
+  position: relative;
+  // margin-left: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  vertical-align: middle;
+  text-align: center;
+  :global {
+    .iconfont {
+      display: block;
+      height: 7px;
+      line-height: 7px;
+      font-size: 14px;
+      color: #c2c2c2;
+      cursor: pointer;
+      &.active {
+        color: #fff;
+      }
+    }
+  }
+}

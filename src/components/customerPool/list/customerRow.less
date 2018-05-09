@@ -1,0 +1,273 @@
+.clear {
+  clear: both;
+  content: '.';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.customerRow {
+  position: relative;
+  min-height: 130px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  &:nth-child(2n) {
+    background-color: #f9f9f9;
+  }
+  .customerRowContent {
+    padding: 14px 0;
+    &:after {
+      .clear
+    }
+  }
+  .sixMonthEarnings {
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  &:hover {
+    background-color: #f1f8ff;
+    :global .showQuickMenu {
+      display: block;
+    }
+  }
+  &:after {
+    .clear;
+  }
+}
+.customerRowLeft {
+  float: left;
+  &:after {
+    .clear;
+  }
+}
+.selectIcon {
+  position: absolute;
+  top: 46px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  :global {
+    .ant-checkbox {
+      vertical-align: text-top;
+    }
+    .ant-checkbox-wrapper {
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+    }
+  }
+}
+.avatorContent {
+  margin-left: 34px;
+  padding: 12px 34px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+.avatorImage {
+  width: 38px;
+  height: 40px;
+  vertical-align: top;
+  &.clickable {
+    cursor: pointer;
+    color: #3983ff;
+  }
+}
+.avatorText {
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #b8b8b8;
+}
+.iconMoneyImage {
+  margin-top: 12px;
+  width: 40px;
+  height: 14px;
+}
+.customerRowRight {
+  padding-left: 160px;
+  padding-right: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  .marginInfo {
+    overflow: hidden;
+    margin-right: 316px;
+  }
+  :global {
+    .row-one {
+      height: 22px;
+      line-height: 22px;
+      span {
+        font-size: 12px;
+        &.cutOffLine {
+          padding: 0 3px;
+        }
+      }
+      .name {
+        margin-right: 8px;
+        color: #4a4a4a;
+        font-weight: bold;
+        font-size: 15px;
+        &.clickable {
+          cursor: pointer;
+          color: #63aee5;
+          &:hover {
+            color: #63aee5;
+          }
+        }
+      }
+      .iconSingned {
+        position: relative;
+        float: right;
+        padding: 0 3px;
+        height: 17px;
+        line-height: 17px;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 1px;
+        background-color: #ff784e;
+        vertical-align: middle;
+        &:hover {
+          .itemText {
+            display: inline-block;
+          }
+        }
+        .itemText {
+          display: none;
+          position: absolute;
+          border-radius: 3px;
+          font-size: 12px;
+          padding: 0 8px;
+          line-height: 18px;
+          top: -25px;
+          right: -10px;
+          box-shadow: 0 0 15px #eaebeb;
+          background-color: #ffffcd;
+          color: #333;
+          white-space: nowrap;
+        }
+      }
+      .highWorthFlag {
+        float: right;
+        margin-left: 10px;
+        padding: 0 3px;
+        border: 1px solid #7d9be0;
+        border-radius: 1px;
+        color: #7d9be0;
+        font-size: 12px;
+        height: 17px;
+        line-height: 17px;
+        text-align: center;
+        box-sizing: content-box;
+      }
+      .riskLevel {
+        float: right;
+        padding: 0 3px;
+        margin-left: 10px;
+        height: 17px;
+        line-height: 17px;
+        text-align: center;
+        position: relative;
+        border-radius: 1px;
+        color: white;
+        font-size: 12px;
+        background-color: #60c1ea;
+        &.zuidi {
+          background-color: #81a3b8;
+          .itemText {
+            right: -48px;
+          }
+        }
+        &.baoshou {
+          background-color: #756fb8;
+        }
+        &.jinshen {
+          background-color: #7d9be0;
+        }
+        &.wenjian {
+          background-color: #60c1ea;
+        }
+        &.jiji {
+          background-color: #fdb02b;
+        }
+        &.jijin {
+          background-color: #fd752b;
+        }
+        &:hover {
+          .itemText {
+            display: inline-block;
+          }
+        }
+        .itemText {
+          display: none;
+          position: absolute;
+          top: -25px;
+          right: -10px;
+          padding: 0 10px;
+          line-height: 18px;
+          border-radius: 3px;
+          font-size: 12px;
+          box-shadow: 0 0 15px #eaebeb;
+          background-color: #ffffcd;
+          color: #333;
+          white-space: nowrap;
+        }
+      }
+    }
+    .row-two {
+      margin-top: 5px;
+      height: 22px;
+      line-height: 22px;
+      span {
+        float: left;
+        display: inline-block;
+        font-size: 12px;
+        color: #777;
+        &.cutOffLine {
+          padding: 0 7px;
+        }
+        &.commission, &.imputation {
+          em {
+            font-weight: bold;
+            font-style: normal;
+          }
+        }
+        &.asset {
+          font-size: 14px;
+          font-weight: bold;
+        }
+        &.assetunit {
+          font-size: 13px;
+        }
+      }
+      .department {
+        float: right;
+      }
+    }
+    // .row-three {
+    //   height: 28px;
+    //   line-height: 28px;
+    //   padding-bottom: 10px;
+    //   border-bottom: 1px dashed #c2c2c2;
+    //   box-sizing: content-box;
+    //   span {
+    //     float: left;
+    //     font-size: 14px;
+    //     color: #777;
+    //     &.asset {
+    //       font-weight: bold;
+    //     }
+    //   }
+    //   .department {
+    //     float: right;
+    //     .cutOffLine {
+    //       padding: 0 10px;
+    //     }
+    //   }
+    // }
+  }
+}
+

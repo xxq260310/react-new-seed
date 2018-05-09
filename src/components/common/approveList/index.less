@@ -1,0 +1,44 @@
+.approveWrapper {
+  .approveNow {
+    line-height: 17px;
+    text-indent: 15px;
+    color: #a1a1a1;
+    font-size: 13px;
+    margin-bottom: 11px;
+    span:nth-child(even) {
+      color: #333;
+    }
+    span:nth-child(3) {
+      margin-left: 20px;
+    }
+  }
+  .approveList {
+    .approveItem {
+      padding: 20px;
+      background: #f9f9f9;
+      box-sizing: border-box;
+      &:nth-child(even) {
+        background: #fff;
+      }
+      &:hover {
+        background: #edf6fd;
+        color: #fff;
+      }
+      p {
+        font-size: 13px;
+        line-height: 1.5;
+        color: #a1a1a1;
+        &:nth-child(2) {
+          font-size: 14px;
+          color: #333;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+  :global {
+    .ant-pagination {
+      margin: 10px 0;
+    }
+  }
+}

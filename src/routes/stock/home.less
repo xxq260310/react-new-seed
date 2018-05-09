@@ -1,0 +1,41 @@
+.stockWrapper {
+  padding: 20px;
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+  .search {
+    font-size: 14px;
+    margin-bottom: 36px;
+    input {
+      margin-right: 24px;
+    }
+  }
+  table {
+    thead {
+      background-color: #f7f7f7;
+    }
+    tr {
+      cursor: pointer;
+      &:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+      th, td {
+        width: 260px;
+      }
+      td {
+        &:first-child {
+          // 个股点评、个股研报、个股公告
+          .StockReview, .StockReport, .StockEvent {
+            width: 260px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .StockEvent {
+            width: 324px;
+          }
+        }
+      }
+    }
+  }
+}

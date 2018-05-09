@@ -1,0 +1,39 @@
+.btnContent {
+  text-align: right;
+  button {
+    margin-left: 20px;
+  }
+  & .leftSection {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    span, b {
+      font-size: 15px;
+      color: #9b9b9b;
+      letter-spacing: -0.09px;
+      text-align: left;
+    }
+  }
+  & .rightSection {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  :global {
+    & button {
+      margin-left: 15px;
+      height: 30px !important;
+      padding: 0 16px !important;
+    }
+  }
+}
+.formFix {
+  :global {
+    .ant-form-item-children {
+      display: flex;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.listHeader {
+  margin-top: 15px;
+  height: 46px;
+  line-height: 46px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  color: #666;
+  font-size: 14px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  :global .selectAll {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    span.hint {
+      display: none;
+      position: absolute;
+      left: 55px;
+      bottom: 10px;
+      z-index: 2;
+      padding: 0 14px;
+      height: 26px;
+      line-height: 26px;
+      font-size: 13px;
+      color: #333;
+      background-color: #ffffcd;
+      box-shadow: 0 0 10px 3px #ededf1;
+      white-space: nowrap;
+    }
+    &:hover {
+      span.hint {
+        display: inline-block;
+      }
+    }
+    .ant-checkbox-inner {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+    }
+  }
+}
+.reorder {
+  float: left;
+  border-left: 1px solid #ddd;
+}
+.selectAllTwo {
+  float: left;
+  margin-left: 15px;
+}
+.selectBox {
+  padding: 11px 20px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  box-sizing: content-box;
+  vertical-align: top;
+  :global {
+    .ant-select-selection {
+      border: 0;
+    }
+  }
+}
+.selectLabel {
+  float: left;
+}

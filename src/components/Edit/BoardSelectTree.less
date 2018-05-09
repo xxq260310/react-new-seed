@@ -1,0 +1,274 @@
+.treeBody {
+  ::-webkit-scrollbar {
+    display: block;
+  }
+  position: relative;
+  .arrow {
+    &:after {
+      position: relative;
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-left: 8px solid #acacac;
+      border-bottom: 4px solid transparent;
+    }
+  }
+  .treeMain {
+    display: flex;
+    flex-direction: normal;
+    // -webkit-box-orient: horizontal;
+    position: relative;
+    padding-top: 30px;
+    .treeMainLeft {
+      display: flex;
+      flex-direction: normal;
+      :global {
+        .ant-tree li span.ant-tree-switcher,
+        .ant-tree li span.ant-tree-iconEle {
+          width: 20px;
+          height: 20px;
+          margin: -2px 4px 0 0;
+          position: relative;
+          box-shadow: 0;
+        }
+        .ant-tree-switcher_open,
+        .ant-tree-switcher_close {
+          &:after {
+            content: "\E624" !important;
+            font-size: 24px !important;
+            display: block;
+            width: 26px;
+            height: 26px;
+            background: #c0c0c0;
+            color: #fff;
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            box-shadow: 0;
+          }
+        }
+        .ant-tree-switcher_close {
+          &:after {
+            content: "\E627" !important;
+            font-size: 22px !important;
+            background: #dfdfdf;
+          }
+        }
+      }
+      // -webkit-box-orient: horizontal;
+      .treeMainLeftContentTYPE_TGJXsummury,
+      .treeMainLeftContentTYPE_TGJXdetail,
+      .treeMainLeftContentTYPE_JYYJsummury,
+      .treeMainLeftContentTYPE_JYYJdetail,
+      .treeMainLeftContentTYPE_LSDB_TGJXsummury,
+      .treeMainLeftContentTYPE_LSDB_TGJXdetail,
+      .treeMainLeftContentTYPE_LSDB_JYYJsummury,
+      .treeMainLeftContentTYPE_LSDB_JYYJdetail {
+        display: flex;
+        flex-direction: normal;
+        width: 254px;
+        // -webkit-box-orient: horizontal;
+        & > div {
+          flex: 1;
+          box-sizing: border-box;
+          border: 1px solid #dfdfdf;
+          width: 254px;
+          height: 400px;
+          overflow-y: auto;
+          &:nth-child(2) {
+            border-left: 0;
+            flex: 1;
+          }
+        }
+      }
+      .treeMainLeftContentTYPE_TGJXsummury,
+      .treeMainLeftContentTYPE_TGJXdetail,
+      .treeMainLeftContentTYPE_LSDB_TGJXsummury,
+      .treeMainLeftContentTYPE_LSDB_TGJXdetail,
+      .treeMainLeftContentTYPE_JYYJdetail {
+        width: 254px;
+      }
+      .treeMainLeftContentTYPE_JYYJsummury,
+      .treeMainLeftContentTYPE_LSDB_JYYJsummury {
+        width: 508px;
+      }
+    }
+    .treeMainRight {
+      flex: 1;
+      margin-left: 16px;
+      & > div {
+        height: 400px;
+        overflow-y: auto;
+        box-sizing: border-box;
+        border: 1px solid #dfdfdf;
+        padding: 10px 20px;
+        transition: all .3s;
+        .selectItem {
+          display: inline-block;
+          padding: 4px 7px 4px 15px;
+          margin: 10px 10px 0 0;
+          background: #f0f0f0;
+          border-radius: 4px;
+          &:hover {
+            box-shadow: 0.5px 0.866px 3px 0 rgb(173, 173, 173);
+          }
+        }
+        .treeMainRigthChildTitle {
+          margin-top: 20px;
+          &:first-child {
+            margin-top: 0;
+          }
+          h3 {
+            height: 30px;
+            font-size: 14px;
+            line-height: 30px;
+            text-indent: 22px;
+            background: url('./img/icon-title.png') no-repeat 0 center;
+            background-size: 14px 16px;
+          }
+        }
+        :global {
+          .anticon-close {
+            margin-left: 7px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .treeDivNodeTitle {
+      position: absolute;
+      top: -10px;
+      color: #33393c;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 40px;
+      span {
+        width: inherit;
+        color: #999;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+:global {
+  .ant-tree li {
+    font-size: 14px;
+    padding-left: 12px;
+    .ant-tree-node-content-wrapper,
+    .ant-tree-node-content-wrapper-normal {
+      width: 170px;
+      height: 22px;
+      padding: 0;
+    }
+    .ant-tree-title {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    ul {
+      padding: 0;
+      li {
+        padding-left: 4px;
+      }
+    }
+  }
+  .ant-tree-child-tree {
+    li {
+      padding-left: 0;
+    }
+  }
+  .ant-tree > li >span.ant-tree-checkbox {
+    display: none;
+  }
+  .ant-tree > li > ul li {
+    .ant-tree-switcher {
+      display: none;
+    }
+    .ant-tree-checkbox {
+      margin: 0 8px 0 20px;
+    }
+    .ant-tree-node-content-wrapper, .ant-tree-node-content-wrapper-normal {
+      font-size: 14px;
+    }
+  }
+  .ant-tree ul.ant-tree-child-tree ul.ant-tree-child-tree {
+    position: absolute;
+    left: 280px;
+    top: 45px;
+    z-index: 2;
+    height: 400px;
+    overflow-y: auto;
+    li {
+      // line-height: 22px;
+      margin-left: -20px;
+    }
+  }
+  .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+    border-color: #108ee9;
+  }
+  .ant-tree-checkbox-inner {
+    width: 14px;
+    height: 14px;
+    border-color: #999;
+  }
+}
+.treeTitle {
+  width: 100%;
+  color: #33393c;
+  h2 {
+    height: 60px;
+    line-height: 60px !important;
+    text-indent: 38px;
+    font-weight: normal;
+    font-size: 16px;
+    &.treeTitlesummury {
+      background: url('./img/icon-summury.png') no-repeat 0 center;
+      background-size: 22px 22px;
+    }
+    &.treeTitledetail {
+      background: url('./img/icon-detail.png') no-repeat 0 center;
+      background-size: 22px 22px;
+    }
+    .treeTitleSpan {
+      display: inline-block;
+      width: 28px;
+      height: 18px;
+      vertical-align: middle;
+      background: url('./img/icon-tips.png') no-repeat 10px center;
+      background-size: 18px 18px;
+    }
+  }
+}
+.treeNodeInfo {
+  margin-top: 10px;
+  min-height: 60px;
+  h4 {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    position: relative;
+    text-indent: 24px;
+    line-height: 24px;
+    margin-top: 5px;
+    span {
+      color: #333;
+    }
+    &:before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #108ee9;
+      border-radius: 6px;
+      position: absolute;
+      left: 12px;
+      top: 8px;
+    }
+  }
+}

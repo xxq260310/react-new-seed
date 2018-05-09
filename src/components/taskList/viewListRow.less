@@ -1,0 +1,196 @@
+/**
+ * @Author: hongguangqing
+ */
+ .pullleft {
+    float: left;
+    text-align: left;
+  }
+  .pullright {
+    float: right;
+    text-align: right;
+  }
+  .appItem {
+    padding: 10px 15px;
+    // width: 512px;
+    width: 100%;
+    height: 97px;
+    background-color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+    &:hover {
+      background-color: #edf6fd;
+    }
+    &.active {
+      background-color: #4897f1;
+      &:hover {
+        background-color: #4897f1;
+      }
+    }
+  }
+  .itemHeader {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    line-height: 26px;
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    .title {
+      width: 78%;
+      color: #7d9be0;
+      .pullleft;
+      .textEllipse;
+      .appMissionIcon {
+        display: inline-block;
+        background: #fdb02b;
+        color: #fff;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        border-radius: 2px;
+        width: 16px;
+        height: 16px;
+        &.active {
+          background-color: #fff;
+          color: #4a90e2;
+        }
+      }
+      .appChanceIcon {
+        display: inline-block;
+        background: #60bbea;
+        color: #fff;
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        border-radius: 2px;
+        width: 16px;
+        height: 16px;
+        &.active {
+          background-color: #fff;
+          color: #4a90e2;
+        }
+      }
+    }
+    .tagArea {
+      width: 22%;
+      font-size: 14px;
+      height: 18px;
+      float: right;
+      text-align: right;
+      line-height: 18px;
+      .pullright;
+    }
+  }
+  .serialNumber {
+    margin-left: 10px;
+    font-size: 13px;
+    font-size: 12px;
+  }
+  .type {
+    margin-left: 15px;
+    font-size: 12px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .textEllipse {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .secondLine, .thirdLine {
+    margin-top: 5px;
+    color: #666;
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+  }
+  .secondLine {
+    font-size: 14px;
+  }
+  .thirdLine {
+    font-size: 13px;
+    color: #a1a1a1;
+  }
+  .subType {
+    width: 100%;
+    .textEllipse;
+  }
+  .drafter {
+    width: 58%;
+    font-size: 12px;
+    .pullleft;
+    .textEllipse;
+  }
+  .date {
+    width: 42%;
+    font-size: 12px;
+    .pullright;
+  }
+  .serialNumber,
+  .secondLine,
+  .thirdLine,
+  .type {
+    &.active {
+      color: #fff;
+    }
+  }
+  .taskName {
+    margin-right: 130px;
+    font-size: 14px;
+    font-weight: 600;
+    .textEllipse;
+  }
+  .progress {
+    width: 120px;
+    float: right;
+    :global {
+      .ant-progress-bg {
+        background-color: #756fb8;
+      }
+    }
+    &.active {
+      .progressText {
+        color: #adcbf1;
+      }
+      :global {
+        .ant-progress-inner {
+          background-color: #adcbf1;
+        }
+        .ant-progress-bg {
+          background-color: #fff;
+        }
+        .progressText {
+          color: #adcbf1;
+          font-size: 12px;
+        }
+        .activeMark {
+          color: #fff;
+        }
+      }
+    }
+    :global {
+      .ant-progress-line {
+        display: block;
+        height: 3px;
+        font-size: 0;
+        line-height: 0;
+      }
+      .ant-progress-outer {
+        height: 3px;
+        font-size: 0;
+        line-height: 0;
+      }
+    }
+  }
+.tag {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}

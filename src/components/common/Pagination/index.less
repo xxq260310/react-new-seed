@@ -1,0 +1,91 @@
+.totalPageSection {
+  font-size: 12px;
+  & > .totalPage {
+    color: #108ee9;
+    font-size: 12px;
+  }
+}
+.commonPage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  :global {
+    .hideLastPage {
+      display: none;
+    }
+    // .ant-pagination-item-active,
+    // .ant-pagination-item-active:focus {
+    //   color: #fff;
+    //   background-color: #108ee9;
+    //   border-color: #108ee9;
+    //   // 关掉动画效果
+    //   transition: none;
+    // }
+
+    // .ant-pagination-item-active a {
+    //   color: #fff;
+    // }
+
+    // li a {
+    //   // 关掉动画效果
+    //   transition: none;
+    // }
+
+    .ant-select-selection.ant-select-selection--single {
+      width: 85px;
+    }
+  }
+}
+
+.hideLastButton {
+  :global {
+    .ant-pagination-item:nth-last-child(2) {
+      display: none;
+    }
+  }
+}
+
+.shortPageList {
+  :global {
+    .ant-pagination-item-after-jump-prev,
+    .ant-pagination-item-after-jump-prev + .ant-pagination-item,
+    .ant-pagination-item-before-jump-next {
+      display: none;
+    }
+  }
+}
+
+.fixTotalPage7 {
+  :global .ant-pagination-item-1 {
+    display: none;
+  }
+}
+.fixTotalPage8 {
+  :global .ant-pagination-item-2 {
+      display: none;
+  }
+}
+.fixTotalPage9 {
+  :global .ant-pagination-item-3 {
+      display: none;
+  }
+}
+
+.hiddenPage7 {
+  :global .ant-pagination-item-7 {
+    display: none;
+  }
+}
+
+.hiddenPage8 {
+  :global .ant-pagination-item-8 {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}

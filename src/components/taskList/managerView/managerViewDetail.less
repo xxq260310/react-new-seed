@@ -1,0 +1,144 @@
+.managerViewDetail {
+  padding: 14px 20px 24px 18px;
+  background-color: #fff;
+  height: 100%;
+  .detailContent {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .missionImplementationSection {
+    width: 100%;
+    min-height: 180px;
+    // border: 1px solid #c2c2c2;
+    margin-bottom: 10px;
+  }
+  .missionFeedbackSection {
+    border-top: 1px solid #c2c2c2;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .taskTitle {
+    padding-bottom: 7px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 15px;
+    color: #000;
+    border-bottom: 1px solid #c2c2c2;
+    box-sizing: content-box;
+  }
+  .descriptionSection {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .basicInfoSection {
+    display: block;
+    margin-bottom: 10px;
+    .custValue {
+      display: flex;
+      .totalNum {
+        font-size: 14px;
+        text-align: left;
+        color: #108ee9;
+        cursor: pointer;
+      }
+      .tip {
+        color: #2782d7;
+        width: 12px;
+        height: 12px;
+        font-size: 14px;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.custDetailContainer {
+  .operationBtnSection {
+    // padding-bottom: 20px;
+  }
+
+  // 保证弹框距离底部10px
+  // 距离顶部50px
+  :global {
+    .ant-modal {
+      overflow-y: hidden;
+      // height: e("calc(100vh - 50px)");
+      padding-bottom: 0;
+      max-height: 622px;
+      // 保证弹框垂直居中
+      top: 50%;
+      // margin-top设置成高度的一半
+      // 缺点是要提前知道精准的高度，这个场景可以用，其它场景这种用法可能需要JS控制
+      margin-top: -311px;
+      min-width: 700px;
+      margin-left: 100px;
+      margin-right: 100px;
+      height: 622px;
+    }
+    .ant-modal-content {
+      height: 100%;
+    }
+    .ant-modal-body {
+      overflow-y: scroll;
+      // height: e("calc(100vh - 146px)");
+      height: 526px;
+      max-height: 526px;
+      padding: 10px 30px 0;
+    }
+    .ant-modal-title {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+    .ant-modal-footer {
+      div .commonBtn:not(:last-child) {
+        margin-right: 10px;
+      }
+      div {
+        margin-right: 20px;
+      }
+      background-color: #f7f7f7;
+      border-color: #f7f7f7;
+      // border-top: 0;
+    }
+    .ant-modal-header {
+      .ant-modal-title {
+        font-size: 18px;
+        color: #333;
+      }
+      padding-left: 30px;
+      background-color: #f7f7f7;
+      border-color: #f7f7f7;
+    }
+    .ant-modal-close-x {
+      font-size: 18px;
+      color: #333;
+    }
+    .ant-table {
+      border-radius: 0;
+    }
+    .emptyRow {
+      pointer-events: none;
+      cursor: none;
+      :global {
+        // 空白行，清除选中项
+        .ant-checkbox-wrapper {
+          display: none;
+        }
+      }
+    }
+    .selfPagination {
+      margin-right: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      .commonPage {
+        padding-bottom: 0;
+        margin-top: 0;
+        ul {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

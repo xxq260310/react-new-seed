@@ -1,0 +1,117 @@
+// font
+@font-family: "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+.fileListMain {
+  .title {
+    font-size: 13px;
+    color: #666;
+    line-height: 26px;
+  }
+  .fileList {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 20px;
+    // background: #ccc;
+    background: #f7f7f7;
+    border: 1px solid #e9e9e9;
+    .fileItem {
+      margin: 0 28px;
+      height: 49px;
+      position: relative;
+      .fileItemText {
+        font-family: @font-family;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        i {
+          font-size: 18px;
+          margin: 0 15px 0 0;
+          color: #f5a623;
+        }
+        line-height: 49px;
+      }
+    }
+  }
+  .commonUploadBtn {
+    border: 1px solid #348cf0 !important;
+    background: transparent;
+    border-radius: 2px;
+    width: 278px;
+    height: 42px !important;
+    margin-bottom: 20px;
+    color: #348cf0;
+    &:hover {
+      border-color: #338aed;
+      color: #338aed;
+    }
+    &:active {
+      border-color: #2d7bd4;
+      color: #2d7bd4;
+    }
+  }
+  .noFile {
+    line-height: 49px;
+    text-indent: 28px;
+  }
+  :global {
+    .ant-progress {
+      position: absolute;
+      bottom: 10px;
+      height: 4px;
+      .ant-progress-outer {
+        height: 4px;
+      }
+      .ant-progress-text {
+        visibility: hidden;
+      }
+    }
+    .ant-popover-arrow,
+    .ant-popover-arrow:after {
+      border-right-color: transparent !important;
+      border-left-color: transparent !important;
+    }
+    .ant-popover-inner {
+      width: 302px;
+      height: 102px;
+      border-radius: 3px;
+      .ant-popover-inner-content {
+        background-color: #fff;
+        border: 1px solid #d9d9d9;
+        h3 {
+          font-family: @font-family;
+          line-height: 28px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          span {
+            float: right;
+            i {
+              cursor: pointer;
+              color: #357bf0;
+            }
+          }
+          .fileListItemSize {
+            color: #f5a623;
+          }
+          &:first-child {
+            color: #357bf0;
+            i {
+              color: #333;
+              margin-right: 4px;
+            }
+          }
+          &:last-child {
+            span {
+              em:first-child {
+                margin-right: 10px;
+              }
+              em:nth-child(2) {
+                padding-left: 10px;
+                border-left: 1px solid #d9d9d9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

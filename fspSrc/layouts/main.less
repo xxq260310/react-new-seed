@@ -1,0 +1,26 @@
+@import "../../src/css/variable.less";
+.layout {
+  position: relative;
+  background: #e4e4ea;
+  .main {
+    transition: @transition-ease-out;
+    .content {
+       min-height: e("calc(100vh - 138px)");
+       border-top: 1px solid transparent;
+       border-bottom: 1px solid transparent;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .layout {
+    .main {
+      .bread {
+        padding: 0 12px;
+      }
+      .content {
+        min-height: e("calc(100vh - 138px)");
+      }
+    }
+  }
+}

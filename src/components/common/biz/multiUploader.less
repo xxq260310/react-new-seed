@@ -1,0 +1,155 @@
+// font
+@font-family: "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+.fileListMultiMain {
+  margin-top: 10px;
+  &:first-child {
+    margin-top: 0;
+  }
+  .title {
+    font-size: 13px;
+    text-indent: 10px;
+    color: #666;
+    line-height: 26px;
+  }
+  .fileList {
+    .fileItem {
+      background: #f7f7f7;
+      border: 1px solid #e9e9e9;
+      width: 158px;
+      height: 42px;
+      margin-left: 10px;
+      display: inline-block;
+      line-height: 44px;
+      position: relative;
+      overflow: hidden;
+      p {
+        font-family: @font-family;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 13px;
+        color: #666;
+        padding-right: 8px;
+        i {
+          font-size: 18px;
+          margin: 0 4px 0 12px;
+          color: #f5a623;
+          vertical-align: baseline;
+        }
+        &.unUploadText {
+          i {
+            color: #666;
+          }
+        }
+      }
+      &:last-child {
+        background: transparent;
+        border: 0;
+        p {
+          padding-right: 0;
+          i {
+            margin: 0 2px;
+            font-size: 10px;
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+  .commonUploadBtn {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    width: 78px;
+    vertical-align: baseline;
+    color: rgba(0, 0, 0, 0.65);
+    height: 24px !important;
+    font-size: 12px !important;
+    line-height: 22px !important;
+    padding: 0 !important;
+    &:hover {
+      border-color: #338aed;
+      color: #338aed;
+    }
+    &:active {
+      border-color: #2d7bd4;
+      color: #2d7bd4;
+    }
+    i {
+      font-size: 12px;
+      margin-right: 2px;
+    }
+  }
+  :global {
+    .ant-progress {
+      position: relative;
+      height: 4px;
+      overflow: hidden;
+      bottom: 33px;
+      & >div {
+        height: 4px;
+      }
+      .ant-progress-outer {
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        .ant-progress-inner {
+          width: 157px;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+      .ant-progress-text {
+        visibility: hidden;
+      }
+    }
+    .ant-popover-arrow,
+    .ant-popover-arrow:after {
+      border-right-color: transparent !important;
+      border-left-color: transparent !important;
+    }
+    .ant-popover-inner {
+      border: 1px solid #d9d9d9;
+      width: 302px;
+      height: 102px;
+      border-radius: 3px;
+      .ant-popover-inner-content {
+        h3 {
+          font-family: @font-family;
+          line-height: 28px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          span {
+            float: right;
+            i {
+              cursor: pointer;
+              color: #357bf0;
+            }
+          }
+          .fileListItemSize {
+            color: #f5a623;
+          }
+          &:first-child {
+            color: #357bf0;
+            i {
+              color: #333;
+              margin-right: 4px;
+            }
+          }
+          &:last-child {
+            span {
+              em:first-child {
+                margin-right: 10px;
+              }
+              em:nth-child(2) {
+                padding-left: 10px;
+                border-left: 1px solid #d9d9d9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import '../common/shadow.less';
+
+.chartMain {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  min-width: 247px;
+  background: #fff;
+  padding-left: 18px;
+  margin: 0 2px 0 0;
+  // &:hover{
+  //   .z-depth-1;
+  // }
+
+  :global {
+    & .echartTooltipTable {
+      color: #777;
+      .tooltipItem {
+        & > div {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          text-align: justify;
+          text-justify: distribute-all-lines;
+          text-align-last: justify;
+          -moz-text-align-last: justify;
+          -webkit-text-align-last: justify;
+        }
+      }
+      .itemValue {
+        & > span {
+          margin-left: 8px;
+          margin-right: 8px;
+          color: #000;
+          font-size: 16px;
+        }
+      }
+    }
+    & .echartTooltip {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin-right: 4px;
+      border-radius: 100%;
+    }
+    & .echartTooltipHD { color: #4f596a; }
+  }
+}
+.colWrapper .chartMain:nth-child(4) {
+  background: #fff;
+}
+.chartHeader {
+  flex: 0 0 45px;
+}
+.chartLegend {
+  padding-right: 20px;
+  margin-bottom: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.oneLegend {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+}
+.legendIcon {
+  display: inline-block;
+  width: 15px;
+  height: 9px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+.chartTitle {
+  float: left;
+  width: 100%;
+  line-height: 45px;
+}
+.chartIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  background-color: #1590e9;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+.chartTiltleTextIcon {
+  font-size: 12px !important;
+}
+.chartTitleText {
+  line-height: 45px;
+  font-size: 15px;
+  color: #4c4c4c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.seeIcon {
+  float: right;
+  margin-right: -6px;
+  margin-left: -50px;
+  width: 25px;
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+}
+.chartWrapper {
+  // height: 200px;
+  flex: 0 1 500px;
+}
+.noChart {
+  width: 100%;
+  height: 100%;
+  display: relative;
+  img {
+    position: absolute;
+    width: 180px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}

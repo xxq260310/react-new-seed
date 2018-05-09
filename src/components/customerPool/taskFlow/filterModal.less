@@ -1,0 +1,125 @@
+@import '../../../css/variable.less';
+
+.labelCustModalContainer {
+  overflow-y: hidden;
+  max-width: 100vw;
+  overflow-x: scroll;
+  .emptyContent {
+    .emptyContent;
+  }
+
+  :global {
+    .ant-modal {
+      overflow-y: hidden;
+      padding-bottom: 0;
+    }
+    .ant-modal-content {
+      .ant-modal-header {
+        height: 56px;
+        padding-left: 31px;
+        padding-right: 18px;
+      }
+      .ant-modal-footer {
+        height: 56px;
+        padding-right: 28px;
+        padding-bottom: 0;
+      }
+      .ant-modal-header,
+      .ant-modal-footer {
+        border: 0;
+        background: #f7f7f7;
+      }
+      height: 100%;
+      .ant-modal-close-x:before {
+        font-size: 20px;
+        color: #4a4a4a;
+        font-weight: bolder;
+      }
+    }
+    .ant-modal-body {
+      overflow-y: scroll;
+      height: 586px;
+      padding: 0 20px 0 31px;
+    }
+
+    .ant-modal-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #4a4a4a;
+    }
+  }
+}
+.modalButton {
+  font-size: 12px;
+  padding: 5px 19px 7px;
+}
+
+.labelCustTable {
+  padding: 0;
+  text-align: left;
+  table {
+     border: 1px solid #e9e9e9;
+  }
+  table > thead > tr > th {
+    padding: 9px 0 9px 8px !important;
+    text-align: left;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+    color: #727272;
+  }
+  tbody > tr > td {
+    padding: 7px 0 7px 8px !important;
+    text-align: left;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+    color: #727272;
+  }
+  table > tbody > tr:nth-child(10) {
+    td {
+      border-bottom: 0;
+    }
+  }
+  table > tbody > tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  tbody > tr > td > span:last-child,  tbody > tr > th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 auto;
+    max-width: 90px !important;
+  }
+  table > thead > tr > th {
+    background-color: #f7f7f7;
+  }
+  :global {
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+      background-color: #fff;
+    }
+    .ant-table-header {
+        background: none;
+      }
+    .ant-table-tbody {
+      text-align: left;
+    }
+    .ant-table-scroll {
+      .scrollBarIEStyle;
+    }
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .labelCustModalContainer {
+    :global {
+      .ant-modal {
+        .ant-modal-content {
+          height: e("calc(100vh - 150px)");
+          .ant-modal-body {
+            overflow-y: scroll;
+            height: e("calc(100vh - 262px)");
+          }
+        }
+      }
+    }
+  }
+}

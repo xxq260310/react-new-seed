@@ -1,0 +1,56 @@
+@import "../../src/css/variable.less";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 58px;
+  padding: 0 16px;
+  background-color: #212e49;
+  .headerContent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    .navItem {
+      line-height: 16px;
+      padding: 3px 6px;
+      border-radius: 3px;
+      font-size: 12px;
+      &:hover {
+        background-color: #e1e7f3;
+        color: #4a4a4a;
+        cursor: pointer;
+      }
+      .icon {
+        margin-left: 2px;
+      }
+    }
+    .splitLine {
+      display: inline-block;
+      width: 1px;
+      height: 9px;
+      background-color: #fff;
+      margin: 0 4px;
+    }
+  }
+}
+
+.popovermenu {
+  width: 280px;
+  margin-left: 6px;
+   :global .ant-popover-inner-content {
+    padding: 0;
+    .ant-menu-inline .ant-menu-item,
+    .ant-menu-vertical .ant-menu-item {
+      border-right: 0;
+      height: 48px;
+      line-height: 48px;
+    }
+    .ant-menu-inline .ant-menu-item-selected,
+    .ant-menu-inline .ant-menu-selected {
+      border-right: 0;
+    }
+  }
+}

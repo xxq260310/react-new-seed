@@ -1,0 +1,32 @@
+// 导入客户的上传控件宽度
+@importWidth: 120px;
+.hide {
+  display: none;
+}
+.importCustomersContent {
+  margin-top: 20px;
+  :global {
+    .uploadBox {
+      .ant-upload.ant-upload-drag {
+        width: @importWidth;
+        height: 30px;
+      }
+      .upload_txt {
+        width: @importWidth;
+        font-size: 12px;
+        line-height: 32px;
+        margin-top: -16px;
+      }
+    }
+    .ant-form {
+      .ant-form-item-label {
+        text-align: left;
+        label {
+          text-align: left;
+          color: #666;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

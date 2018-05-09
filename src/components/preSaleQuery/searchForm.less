@@ -1,0 +1,28 @@
+.searchForm {
+  display: flex;
+  align-items: center;
+  :global {
+    .ant-form-item-label label {
+      color: #a1a1a1;
+      font-size: 14px;
+      font-weight: normal;
+    }
+    .ant-form-item-required:before {
+      color: #ff4058;
+    }
+  }
+  .formItem {
+    .btn {
+      padding-left: 26px;
+      padding-right: 26px;
+      &:first-child {
+        margin-right: 17px;
+      }
+    }
+    :global {
+      .ant-select {
+        border-radius: 4px;
+      }
+    }
+  }
+}

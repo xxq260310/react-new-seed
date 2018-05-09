@@ -1,0 +1,97 @@
+.react-app {
+  .selfSelect {
+    position: relative;
+    width: 100%;
+    height: 35px;
+
+    & > .selfSelectHeader {
+      position: relative;
+      display: inline-block;
+      font-size: 15px;
+      line-height: 33px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 7px;
+      cursor: pointer;
+      .selectNames {
+        padding-right: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &:hover {
+        border-color: #49a9ee;
+      }
+      &.selfSelectHdActive {
+        border-color: #49a9ee;
+        box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
+      }
+
+      :global {
+        .anticon {
+          font-size: 12px;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+      & > .selfSelectArrow {
+        font-style: normal;
+        vertical-align: baseline;
+        text-align: center;
+        text-transform: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        line-height: 1;
+        margin-top: -6px;
+        display: inline-block;
+        font-size: 12px;
+        font-size: 9px \9;
+        -webkit-transform: scale(0.75) rotate(0deg);
+        transform: scale(0.75) rotate(0deg);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0, M21=0, M22=1)";
+        zoom: 1;
+      }
+    }
+    & > .selfSelectBody {
+      position: relative;
+      top: -8px;
+      display: none;
+      z-index: 5;
+      width: 100%;
+      height: 200px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+      box-sizing: border-box;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      &.show { display: block; }
+      :global {
+        & .ant-checkbox-wrapper {
+          font-size: 12px;
+          margin-left: 10px;
+          width: 95%;
+          height: 25px;
+          line-height: 25px;
+          box-sizing: border-box;
+          &:hover {
+            background-color: #f7f7f7;
+          }
+        }
+        & .ant-checkbox-group {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "../css/variable.less";
+@import "../css/icon.less";
+
+.layout {
+  position: relative;
+  min-width: 1007px; // 原设置为1076px，不确定设置这个的作用，暂时保留
+  &.withnavbar {
+    .main {
+      margin-left: 0;
+    }
+  }
+
+  .main {
+    position: relative;
+    overflow: auto;
+    transition: @transition-ease-out;
+    background-color: @invest-bkc-base;
+    .content {
+      overflow: hidden; //为了对抗外边距折叠引起的fsp滚动问题，切勿删
+      min-height: e("calc(100vh - 184px)");
+      position: relative;
+    }
+  }
+}
+:global {
+
+  .react-app, .ant-message, .ant-modal-wrap {
+    // 覆盖FSP里的相关定义，避免react-app之外的react组件展现不正常
+    div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+      font-family: @font-family;
+    }
+  }
+
+  .react-app, .ant-message {
+    h1, h2, h3, h4, h5, h6 {
+       line-height: inherit;
+    }
+    .ant-menu-dark {
+      color: #999;
+      background-color: #3e3e3e;
+
+      .ant-menu-submenu-title:hover,
+      .ant-menu-submenu:hover {
+        color: @primary-color;
+      }
+
+      .ant-menu-sub {
+        color: #999;
+      }
+
+      .ant-menu-submenu-selected {
+        color: @primary-color;
+
+        &:not(.ant-menu-submenu-open) {
+          background-color: @dark-half;
+        }
+      }
+
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        & > a {
+          color: #999;
+        }
+
+        &:hover > a {
+          color: @primary-color;
+        }
+      }
+
+      &.ant-menu-inline {
+        .ant-menu-item-selected {
+          background-color: @dark-half;
+        }
+      }
+
+      .ant-menu-item-selected {
+        color: @primary-color;
+        background-color: @dark-half;
+
+        & > a {
+          color: @primary-color;
+        }
+
+        &:hover {
+          background-color: @dark-half;
+        }
+      }
+    }
+  }
+}
+
+.spin {
+  :global .ant-spin-container {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .layout {
+    .main {
+      .container {
+        margin: 12px;
+      }
+
+      .bread {
+        padding: 0 12px;
+      }
+
+      .content {
+        min-height: e("calc(100vh - 160px)");
+      }
+
+      :global {
+        .content-inner {
+          padding: 12px;
+          min-height: e("calc(100vh - 160px)");
+        }
+      }
+    }
+  }
+}

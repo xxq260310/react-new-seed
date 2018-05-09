@@ -1,0 +1,114 @@
+/**
+ * 沪深归集率数据
+*/
+exports.response = function (req, res) {
+  return {
+    "code":"0",
+    "msg":"OK",
+    "resultData":[{
+      "key":"ttfBusi",
+      "name":"天天发",
+      "value":"5130",
+      "unit":"户",
+      "description":"目前开通天天发客户数量",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":"累计开通业务",
+      "children":null,
+      "isAggressive":null
+    }, {
+      "key":"hgtBusi",
+      "name":"沪港通",
+      "value":"1720",
+      "unit":"户",
+      "description":"目前开通沪港通客户数量",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":"累计开通业务",
+      "children":null,
+      "isAggressive":null
+    }, {
+      "key":"sgtBusi",
+      "name":"深港通",
+      "value":"670",
+      "unit":"户",
+      "description":"目前开通深港通客户数量",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":"累计开通业务",
+      "children":null,
+      "isAggressive":null
+    }, {
+      "key":"rzrqBusi",
+      "name":"融资融券",
+      "value":"2571",
+      "unit":"户",
+      "description":"目前开通融资融券客户数量",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":"累计开通业务",
+      "children":null,
+      "isAggressive":null
+    }, {
+      "key":"xsbBusi",
+      "name":"新三板",
+      "value":"171",
+      "unit":"户",
+      "description":"目前开通新三板客户数量",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":"累计开通业务",
+      "children":null,
+      "isAggressive":null
+    }, {
+      "key":"gpqqBusi",
+      "name":"股票期权",
+      "value":"75",
+      "unit":"户",
+      "description":"目前开通股票期权客户数量",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":"累计开通业务",
+      "children":null,
+      "isAggressive":null
+    }, {
+      "key":"cybBusi",
+      "name":"创业板",
+      "value":"8724",
+      "unit":"户",
+      "description":"目前开通创业板客户数量",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":"累计开通业务",
+      "children":null,
+      "isAggressive":null
+    }, {
+      "key":"shzNpRate",
+      "name":"沪深归集率",
+      "value":"0.8708075501655024686434811549167654433679",
+      "unit":"%",
+      "description":"客户在沪深市场归属华泰的资产总额/所有资产总额\n",
+      "categoryKey":null,
+      "isBelongsSummury":null,
+      "hasChildren":null,
+      "parentKey":null,
+      "parentName":null,
+      "children":null,
+      "isAggressive":null
+    }],
+  };
+}

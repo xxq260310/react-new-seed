@@ -1,0 +1,85 @@
+.spServerPersonel {
+	width: 100%;
+	height: auto;
+	border: 1px solid #e9e9e9;
+}
+.spServerPersonelItem {
+	width: 100%;
+	height: 51px;
+	color: #333;
+	font-size: 14px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.spServerPersonelItem + .spServerPersonelItem {
+	border-top: 1px solid #e9e9e9;
+}
+.spServerPersonelItem.firstItem {
+	background: #f7f7f7;
+}
+.mainManager {
+	position: relative;
+}
+.mainManager:before {
+	content: '\4E3B';
+	position: absolute;
+	left: -25px;
+	top: 1px;
+	width: 18px;
+	height: 18px;
+	border-radius: 4px;
+	background: #ff7a95;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 18px;
+}
+
+:global {
+	.flex-base_0 {
+		width: 0;
+		display: none;
+	}
+	.flex-base_1 {
+		flex: 1;
+	}
+	.flex-base_2 {
+		flex: 2;
+	}
+	.flex-base_3 {
+		flex: 3;
+	}
+	.text-center {
+		text-align: center;
+	}
+	.hide {
+		display: none;
+	}
+	.label-btn-circle {
+		display: block;
+		margin-left: 0;
+		marign-right: 0;
+		margin: auto;
+		width: 14px;
+		height: 14px;
+		border: 1px solid rgba(0,0,0,.2);
+		border-radius: 50%;
+		position: relative;
+	}
+	.label-btn-circle.checked {
+		border: 1px solid #348cf0;
+	}
+	.label-btn-circle.checked:after {
+		content: '';
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		border: none;
+		background: #348cf0;
+	}
+}

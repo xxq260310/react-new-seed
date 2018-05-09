@@ -1,0 +1,11 @@
+{
+  "compilerOptions":
+      {
+      "target": "es6",
+      "module": "commonjs",
+      "experimentalDecorators" : true,
+      "allowSyntheticDefaultImports": true
+      },
+  "exclude": [ "node_modules", "mockup", "build", "config", "dist", "docker", "docs" ],
+  "include": ["src/**/*", "fspSrc/**/*"]
+  }

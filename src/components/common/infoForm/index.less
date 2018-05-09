@@ -1,0 +1,47 @@
+.infoForm {
+  margin: 10px 0 0;
+  .infoFormLabel,
+  .infoFormContent {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .infoFormLabel {
+    width: 160px;
+    font-size: 14px;
+    color: #9b9b9b;
+    text-align: right;
+    line-height: 32px;
+    i {
+      margin-right: 4px;
+      color: red;
+      font-style: normal;
+    }
+  }
+  .colon {
+    padding: 0 4px;
+  }
+  .infoFormContent {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  input {
+    width: 220px;
+    height: 32px;
+  }
+  textarea {
+      width: 417px;
+      height: 74px;
+      resize: none;
+  }
+  :global {
+    .ant-select {
+      width: 220px;
+      height: 32px;
+      border-radius: 4px;
+    }
+  }
+  &:last-child {
+    padding-bottom: 20px;
+  }
+}

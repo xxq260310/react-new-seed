@@ -1,0 +1,44 @@
+:global {
+  .customerGrouplistTable {
+    padding: 15px 20px 15px 15px;
+  }
+  .CustomerGrouplist {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    .ant-table-thead > tr > th {
+      background-color: #fff;
+      text-align: left;
+      span {
+        font-size: 13px;
+        color: #333;
+        font-weight: bold;
+      }
+    }
+    .ant-table-tbody {
+      tr > td {
+        padding: 11px 44px;
+        border-bottom: 0;
+        font-size: 14px;
+        color: #666;
+        text-align: left;
+        a {
+          color: #108ee9;
+        }
+      }
+      tr:nth-child(2n+1) > td {
+        background-color: #f9f9f9;
+      }
+      tr:nth-child(2n) > td {
+        background-color: #fff;
+      }
+      tr:last-child > td {
+        border-bottom: 1px solid #f2f3f4;
+      }
+    }
+    .ant-table-pagination {
+      float: right !important;
+      margin-top: 45px !important;
+      margin-bottom: 30px !important;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.tableContainer {
+  .extra {
+    display: flex;
+    display: -webkit-flex;
+    padding-bottom: 9px;
+    position: relative;
+    .title {
+      font-size: 15px;
+      color: #333;
+      letter-spacing: -0.09px;
+      text-align: left;
+    }
+    .btn {
+      position: absolute;
+      right: 0;
+      bottom: 9px;
+      width: 95px;
+      height: 33px;
+      padding: 0;
+    }
+  }
+  .memberExtra {
+    padding-bottom: 0;
+    .memberBtn {
+      top: -52px;
+      right: 0;
+    }
+  }
+  .column {
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 151px;
+    margin: auto;
+  }
+  .action {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    line-height: 23px;
+    .delete {
+      margin-right: 10px;
+    }
+    .delete:hover {
+      color: #4897f1;
+    }
+    .update {
+      border-left: 1px solid #e9e9e9;
+      .updateIcon {
+        padding-left: 9px;
+      }
+      .updateIcon:hover {
+        color: #4897f1;
+      }
+    }
+  }
+  :global {
+    .ant-table {
+      border: 1px solid #e9e9e9;
+      .ant-table-thead > tr > th {
+        font-size: 14px;
+        color: #333;
+      }
+      .ant-table-tbody > tr:hover > td {
+        background: #fff;
+      }
+    }
+    .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+      overflow-y: auto;
+    }
+    .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body {
+      overflow-y: auto !important;
+    }
+  }
+}

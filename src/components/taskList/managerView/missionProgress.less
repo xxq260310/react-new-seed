@@ -1,0 +1,134 @@
+.missionProgressSection {
+  display: block;
+  border: 1px solid #c2c2c2;
+  box-shadow: -1px 1px 5px 1px #c2c2c2;
+  margin-bottom: 10px;
+  .tooltipOverlay {
+    top: -45px !important;
+    :global {
+      .ant-tooltip-inner {
+        // padding: 10px 25px 20px 15px;
+        color: #333;
+        background-color: #fff;
+      }
+      .ant-tooltip-arrow {
+        display: none;
+      }
+      .ant-tooltip-content {
+        width: 179px;
+        height: 79px;
+      }
+    }
+    .content {
+      .currentCount {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+      .linkCustDetail {
+        color: #108ee9;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+  }
+  & > .title {
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+    width: 95%;
+    border-bottom: 1px solid #c2c2c2;
+    margin: 0 auto;
+  }
+  & > .content {
+    margin: 0 auto;
+    width: 95%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    & > .area {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      & > .serviceCust, .statusCust, .standardCust {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+        & > .title {
+          margin-right: 8px;
+          display: inline-block;
+          min-width: 85px;
+          text-align: right;
+          font-size: 14px;
+          color: #a7a7a7;
+        }
+        :global {
+          .ant-progress {
+            display: flex;
+            justify-content: flex-start;
+            & > div:first-child {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              width: 100%;
+            }
+            .ant-progress-outer {
+              padding-right: 0;
+              margin-right: 0;
+              // background-color: #daeafc;
+              border-radius: 100px;
+              width: 100%;
+              position: relative;
+            }
+            .ant-progress-text {
+              min-width: 80px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            .ant-progress-bg {
+              // width: 50%;
+              height: 8px;
+              cursor: pointer;
+            }
+            .ant-progress-inner {
+              height: 8px;
+              cursor: pointer;
+              background-color: #f3f3f3;
+            }
+            .ant-progress-outer {
+              height: 8px;
+              display: flex;
+              background-color: #f3f3f3;
+            }
+          }
+        }
+      }
+      & > .standardCust {
+        margin-bottom: 0;
+        :global {
+          .ant-progress-bg {
+            background-color: #756fb8;
+          }
+        }
+      }
+      & > .statusCust {
+        :global {
+          .ant-progress-bg {
+            background-color: #23d8f2;
+          }
+        }
+      }
+      & > .serviceCust {
+        :global {
+          .ant-progress-bg {
+            background-color: #4897f1;
+          }
+        }
+      }
+    }
+  }
+}

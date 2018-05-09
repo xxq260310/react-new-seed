@@ -1,0 +1,58 @@
+.modalContainer {
+  .contentTitle {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .row {
+    flex: display;
+    display: -webkit-flex; /* Safari */
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 2px;
+    .key {
+      color: #a1a1a1;
+      margin-right: 15px;
+      width: 65px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .value {
+      color: #333;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 470px;
+    }
+  }
+  :global {
+    .ant-modal-header {
+      padding: 11px 20px 9px;
+      .ant-modal-title {
+        font-family: PingFangSC-Regular;
+        color: #333;
+      }
+    }
+    .ant-modal-body {
+      padding: 12px 20px 15px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+    }
+    .ant-modal-footer {
+      border-top: none;
+      padding: 0 35px 20px;
+      .ant-btn:first-child {
+        display: none;
+      }
+      .ant-btn {
+        padding: 0 35px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      .ant-btn-primary {
+        background-color: #348cf0;
+      }
+    }
+  }
+}

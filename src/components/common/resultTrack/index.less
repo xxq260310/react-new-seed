@@ -1,0 +1,133 @@
+.resultTrackContainer {
+  & > .title {
+    display: block;
+    font-size: 15px;
+    color: #4a4a4a;
+    :global {
+      .ant-checkbox-wrapper {
+        span:last-child {
+          vertical-align: middle;
+          font-size: 15px;
+          color: #4a4a4a;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  & > .divider {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin-top: 17px;
+    margin-bottom: 14px;
+  }
+  & > .container {
+    & > .resultTrackWindow {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-bottom: 23px;
+      & > .title {
+        font-size: 12px;
+        color: #4a4a4a;
+        margin-bottom: 5px;
+      }
+      & > .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        :global {
+          .ant-select {
+            min-width: 100px;
+            max-width: 250px;
+          }
+        }
+      }
+    }
+    & > .indicatorTargetData {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      & > .title {
+        font-size: 12px;
+        color: #4a4a4a;
+        margin-bottom: 5px;
+      }
+      & > .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100%;
+        & > .remainingContent {
+          display: flex;
+          align-items: center;
+        }
+        & > .remainingContentBaseline {
+          align-items: baseline;
+        }
+        & > .remainingContent > div {
+          margin-left: 20px;
+          // font-size: 14px;
+          span {
+            font-size: 14px;
+          }
+        }
+        & > .indicatorLevel1, & > .remainingContent > div {
+         :global {
+            .ant-select {
+              min-width: 100px;
+              max-width: 250px;
+            }
+          }
+        }
+        .noStateIndicator, .hasStateIndicator {
+          display: flex;
+        }
+        .noStateIndicator {
+          position: relative;
+          top: -2px;
+          & > div:not(:first-child) {
+            margin-left: 20px;
+          }
+          & > div:first-child {
+            span {
+              font-size: 14px;
+            }
+          }
+          & > div:nth-child(3) {
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+        .hasStateIndicator {
+          span {
+            font-size: 14px;
+          }
+        }
+        & > .indicatorLevel3 {
+          display: flex;
+        }
+        .hideSelectArrow {
+          display: block;
+          :global {
+            .ant-select-selection {
+              .ant-select-arrow {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  & > .indicatorDescription {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    margin-top: 9px;
+  }
+}

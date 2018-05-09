@@ -1,0 +1,85 @@
+.showChartBtn {
+  display: inline-block;
+  cursor: pointer;
+}
+.lh28 {
+  height: 28px;
+  line-height: 28px;
+}
+.showCharts {
+  border: 1px solid antiquewhite;
+  height: 152px;
+  width: 423px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px 2px #d2d2d2;
+  .chartsContent {
+    display: inline-block;
+    width: 305px;
+    height: 100%;
+  }
+  .chartsText {
+    float: right;
+    margin: 0 20px 0 0;
+    // width: 200px;
+    font-size: 13px;
+    color: #808080;
+    div {
+      margin-top: 8px;
+    }
+    :global {
+      p {
+        height: 18px;
+        line-height: 18px;
+      }
+      .tit {
+        font-size: 12px;
+        color: #888;
+        text-align: right;
+      }
+      .asset {
+        text-align: right;
+        span {
+          float: none;
+        }
+        .num {
+          font-weight: bold;
+          font-size: 16px;
+          color: #4a4a4a;
+          &.red {
+            color: #e64340;
+          }
+          &.green {
+            color: #499d37;
+          }
+        }
+        .unit {
+          font-size: 12px;
+          color: #888;
+          &.red {
+            color: #e64340;
+          }
+          &.green {
+            color: #499d37;
+          }
+        }
+      }
+    }
+  }
+}
+.sixMonthEarnings {
+  :global {
+    .ant-tooltip-arrow {
+      display: none;
+    }
+    .ant-tooltip-inner {
+      max-width: 423px;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+}
+.showDetail {
+  color: #3983ff;
+  font-style: normal;
+}

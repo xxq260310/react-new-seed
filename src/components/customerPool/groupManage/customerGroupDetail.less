@@ -1,0 +1,149 @@
+@import '../../../css/variable.less';
+
+.groupDetail {
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  :-ms-input-placeholder {
+    font-size: 12px;
+  }
+  & > .nameSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    & > .name {
+      width: 12%;
+      font-size: 14px;
+      padding-top: 5px;
+    }
+    & > .name::before {
+      display: inline-block;
+      margin-right: 4px;
+      content: "*";
+      line-height: 1;
+      font-size: 12px;
+      color: #f04134;
+    }
+    & > .nameContent {
+      width: 88%;
+    }
+  }
+  & > .descriptionSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    & > .description {
+      width: 12%;
+      padding-top: 5px;
+      font-size: 14px;
+      padding-left: 10px;
+    }
+    & > .descriptionContent {
+      width: 88%;
+      textarea {
+        resize: none !important;
+        height: 82px !important;
+        min-height: 82px !important;
+        max-height: 82px !important;
+        overflow-y: scroll;
+        .noScrollBarIEStyle;
+      }
+    }
+  }
+  & > .groupCustomerSearch {
+    display: block;
+  }
+  & > .addCustSection {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    & > .addCustLeft {
+      float: left;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      & > .addType {
+        width: 78px;
+        font-size: 14px;
+        padding-top: 5px;
+      }
+      & > .addType::before {
+        display: inline-block;
+        margin-right: 4px;
+        content: "*";
+        line-height: 1;
+        font-size: 12px;
+        color: #f04134;
+      }
+    }
+    & > .addCustRight {
+      float: right;
+      font-size: 14px;
+      & > .singleCust {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        & > .searchTitle {
+          font-size: 14px;
+          margin-right: 10px;
+          color: #666;
+          margin-top: 2px;
+        }
+      }
+      & > .multiCust {
+        margin: 5px 0 19px;
+      }
+      .uploadLoading {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .downloadLink {
+        font-size: 14px;
+        color: #108ee9;
+        margin-left: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+  & > .multiErrmsg {
+    margin-bottom: 10px;
+    text-align: center;
+    :global {
+      .ant-alert {
+        font-size: 12px;
+        color: #e33c39;
+      }
+    }
+  }
+  & > .customerListTable {
+    display: block;
+    height: 230px;
+    .custListTable {
+      padding: 0 !important;
+      table > thead > tr > th, tbody > tr > td {
+        padding: 7px 0 !important;
+        text-align: center !important;
+      }
+      tbody > tr > td > span:last-child {
+        max-width: 110px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0 auto;
+      }
+      table > thead > tr > th {
+        text-align: center !important;
+      }
+      :global {
+        .ant-table-header {
+          background-color: #fff;
+          table {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

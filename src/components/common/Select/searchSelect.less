@@ -1,0 +1,63 @@
+.labelName {
+  display: inline-block;
+  font-size: 14px;
+  color: #a1a1a1;
+  width: 80px;
+  line-height: 18px;
+  text-align: right;
+  margin-right: 12px;
+}
+.dropDownBox {
+   height: 32px;
+}
+.searchBox {
+  :global {
+    & .ant-input {
+      padding-right: 26px !important;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+.searchDropDown {
+  color: #666;
+  font-weight: bold;
+  border-bottom: 1px solid #f6f6f6;
+  text-align: center;
+  cursor: default;
+  max-height: 343px;
+  :global {
+    .ant-select-dropdown-menu-item {
+      cursor: default;
+      height: 40px;
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+}
+
+.searchDropDown.searchIcon {
+  color: #108ee9;
+}
+
+.searchIcon {
+  color: #6e6e6e;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  font-size: 14px;
+}
+.prodValue {
+  display: inline-block;
+  color: #333;
+}
+.addButton {
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  width: 95px;
+  height: 31px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #bbb;
+  line-height: 18px;
+}

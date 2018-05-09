@@ -1,0 +1,118 @@
+.verticalTop {
+  vertical-align: top;
+}
+.floatRight {
+  float: right;
+}
+.floatLeft {
+  float: left;
+}
+.iconBtnBorder {
+  border-left: 1px solid transparent;
+}
+.fixIconBtnBorder {
+  border-left: none;
+}
+.fixMargin {
+  margin-right: 20px;
+}
+.newSelect {
+  margin-left: 10px;
+  width: 110px;
+}
+.newSelect1 {
+  composes: newSelect;
+  composes: fixMargin;
+}
+
+.titleBar {
+  padding: 0 18px;
+  height: 40px;
+  background-color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid #bfbfbf;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+.titleText {
+  composes: floatLeft;
+  height: 40px;
+  margin-right: 22px;
+  font-size: 18px;
+  // font-weight: bold;
+  line-height: 40px;
+  color: #333;
+}
+.titleBarRight {
+  composes: floatRight;
+  height: 40px;
+}
+.orderLabel {
+  font-size: 12px;
+}
+.iconBtn {
+  composes: iconBtnBorder;
+  display: inline-block;
+  margin: 8px 0;
+  height: 24px;
+  // padding-left: 20px;
+  line-height: 24px;
+  color: #999;
+  box-sizing: border-box;
+  i {
+    cursor: pointer;
+  }
+}
+.iconBtn1 {
+  composes: iconBtn;
+  composes: fixIconBtnBorder;
+}
+:global {
+  .react-app {
+    .iconColor {
+      color: #3983ff;
+    }
+    .hideOption,
+    .hideSelect {
+      display: none;
+    }
+    .investPerformanceBoard {
+      position: relative;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      .ant-select {
+        color: #fff;
+      }
+      .ant-select-selection {
+        background-color: transparent;
+        border-color: transparent;
+      }
+      .ant-select-open .ant-select-selection,
+      .ant-select-focused .ant-select-selection,
+      .ant-select-selection:focus,
+      .ant-select-selection:active {
+        border-color: transparent;
+        box-shadow: none;
+      }
+      .ant-select-selection--single {
+        height: 24px;
+        .ant-select-arrow {
+          color: #b2b7ba;
+          &:before {
+            content: "\E606";
+          }
+        }
+      }
+      .ant-select-selection__rendered {
+        line-height: 22px;
+        color: #666;
+      }
+    }
+  }
+}
+// 修改antd上Select样式
+// end

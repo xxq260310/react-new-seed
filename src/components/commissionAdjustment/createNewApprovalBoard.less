@@ -1,0 +1,145 @@
+@fontColor: #333;
+@fontSize: 14px;
+@activeColor: #348cf0;
+@borderBottom: 1px solid #e9e9e9;
+
+.lineInputWrap {
+  width: 100%;
+  margin: 10px 0;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .label {
+    float: left;
+    width: 160px;
+    font-size: 14px;
+    color: #9b9b9b;
+    text-align: right;
+    line-height: 32px;
+    margin-right: -160px;
+    .required {
+      margin-right: 4px;
+      color: red;
+      font-style: normal;
+    }
+    .colon {
+      padding: 0 4px;
+    }
+  }
+  .fuhao {
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 26px;
+    padding-left: 4px;
+  }
+  .componentBox {
+    margin-left: 160px;
+    padding-left: 20px;
+    float: left;
+    font-size: 14px;
+    color: #333;
+    &.inputBox {
+      input {
+        width: 220px;
+        height: 32px;
+      }
+    }
+    &.selectBox {
+      :global(.ant-select) {
+         width: 220px;
+         height: 32px;
+         border: 1px solid #d9d9d9;
+         border-radius: 4px;
+      }
+    }
+    &.textAreaBox {
+      textarea {
+        width: 417px;
+        height: 74px;
+        resize: none;
+      }
+    }
+  }
+}
+.editComponent {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  margin: 0;
+  overflow: auto;
+}
+.editWrapper {
+    margin: 20px 0;
+    border-bottom: 1px solid #e9e9e9;
+}
+.dcHeader {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e9e9e9;
+}
+.dcHaderNumb {
+  float: left;
+  font-size: 14px;
+  color: #333;
+}
+.cutSpace {
+  height: 20px;
+}
+.newApprovalBox {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 15px;
+}
+.contentBox {
+  width: 100%;
+}
+.approvalBlock {
+  padding: 20px 0;
+  border-bottom: 1px solid #e9e9e9;
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .commissionUlBox {
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    .leftCurrentCom {
+      float: left;
+      width: 368px;
+    }
+    .rightTargetCom {
+      float: left;
+      width: 368px;
+    }
+  }
+}
+.checkApprover {
+  display: inline-block;
+  width: 200px;
+  height: 32px;
+  border: 1px solid #e9e9e9;
+  cursor: pointer;
+  line-height: 32px;
+  padding-left: 8px;
+  border-radius: 4px;
+  &:hover {
+    border-color: #49a9ee;
+  }
+  .searchIcon {
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    float: right;
+  }
+}

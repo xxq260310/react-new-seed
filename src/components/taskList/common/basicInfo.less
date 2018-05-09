@@ -1,0 +1,78 @@
+.basicInfo {
+  margin-top: 13px;
+}
+.basicInfoContent {
+  padding: 10px 0 30px 16px;
+  border-bottom: 1px solid #c2c2c2;
+}
+.row {
+  overflow: hidden;
+  .col {
+    float: left;
+    width: 380px;
+    margin-top: 5px;
+    .label {
+      float: left;
+      width: 100px;
+      font-size: 14px;
+      color: #9b9b9b;
+      text-align: right;
+    }
+    .content {
+      font-size: 14px;
+      color: #4a4a4a;
+      margin-left: 105px;
+      // &.servicePolicy {
+      //   margin-left: 105px;
+      // }
+    }
+  }
+}
+.colItem {
+  margin-top: 5px;
+  &.width380 {
+    width: 380px;
+  }
+  .label {
+    display: inline-block;
+    width: 100px;
+    font-size: 14px;
+    color: #9b9b9b;
+    text-align: right;
+  }
+  .content {
+    font-size: 14px;
+    color: #4a4a4a;
+    margin-left: 105px;
+    word-wrap: break-word;
+  }
+  .previewCust {
+    color: #108ee9;
+    font-size: 14px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .custTotal {
+    color: #108ee9;
+    font-size: 14px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .custTotalTooltip {
+    display: inline-block;
+  }
+}
+.fl {
+  float: left;
+}
+.custNumberTips {
+  :global {
+    .ant-tooltip-content {
+      width: 179px;
+    }
+    .ant-tooltip-inner {
+      padding: 15px;
+      background-color: rgba(64, 64, 64, 0.85);
+    }
+  }
+}

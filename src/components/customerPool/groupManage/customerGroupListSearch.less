@@ -1,0 +1,33 @@
+.searchWrapper {
+  display: flex;
+  width: 100%;
+  & > .name {
+    font-size: 14px;
+    color: #666;
+    padding-right: 5px;
+    margin-top: 2px;
+  }
+  :global {
+    & .ant-input-affix-wrapper {
+      input {
+        width: 368px;
+        border-radius: 0;
+      }
+      .ant-input-suffix {
+        right: 0;
+        & button {
+          position: relative;
+          border-radius: 0;
+          width: 30px;
+          height: 30px;
+          & i {
+            position: absolute;
+            top: 5px;
+            left: 7px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

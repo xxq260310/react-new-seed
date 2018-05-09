@@ -1,0 +1,169 @@
+@import '../../../css/variable.less';
+
+.container {
+  display: block;
+  width: 100%;
+  // ['170px', '100px', '100px', '100px', '100px', '100px' , '150px']
+  .notFoldedScope {
+    table {
+      tbody > tr > td:nth-child(1) {
+        :global {
+          .column {
+            max-width: 150px;
+          }
+        }
+      }
+      tbody > tr > td:last-child {
+        :global {
+          .column {
+            max-width: 130px;
+          }
+        }
+      }
+      tbody > tr > td:not(:first-child):not(:last-child) {
+        :global {
+          .column {
+            max-width: 90px;
+          }
+        }
+      }
+    }
+  }
+  // ['310px', '160px', '160px', '160px', '160px', '160px', '160px']
+  .foldedScope {
+    table {
+      tbody > tr > td:nth-child(1) {
+        :global {
+          .column {
+            max-width: 280px;
+          }
+        }
+      }
+      tbody > tr > td:not(:first-child) {
+        :global {
+          .column {
+            max-width: 140px;
+          }
+        }
+      }
+    }
+  }
+  .custManagerScopeTable {
+    padding: 0;
+    table {
+      border-top: 2px solid #e9e9e9;
+      border-color: #e9e9e9;
+    }
+    table > tbody > tr > td:nth-child(2) {
+      pointer-events: none;
+    }
+    table > thead > tr > th, tbody > tr > td {
+      padding: 8px 0;
+      text-align: left !important;
+      font-size: 14px;
+      line-height: 18px;
+      background: #fff;
+      height: 36px;
+    }
+    tbody > tr:not(:last-child) > td {
+      border-bottom: 1px solid #e9e9e9;
+      background: #fff;
+      color: #666;
+    }
+    table > thead > tr > th {
+      background-color: #fff;
+      border-bottom: 2px solid #e9e9e9;
+    }
+    table > thead > tr > th:first-child {
+      text-align: left;
+    }
+    table > thead > tr > th:first-child {
+      span {
+        margin-left: 36px;
+      }
+    }
+    table > thead > tr > th:nth-child(2) {
+      span {
+        margin-left: 20px;
+      }
+    }
+    table > tbody > tr > td:nth-child(2) {
+      span {
+        margin-left: 20px;
+      }
+    }
+    table > tbody > tr > td:first-child {
+      :global {
+        .column {
+          margin-left: 36px;
+        }
+      }
+    }
+    :global {
+      .ant-table-header {
+        background-color: #fff;
+        table {
+          border-bottom: 0;
+        }
+      }
+      .ant-table-title {
+        border: 1px solid #e9e9e9;
+        height: 36px;
+        line-height: 36px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .ant-table-footer {
+        border: 1px solid #e9e9e9;
+        line-height: 36px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        background: #fff;
+        height: 54px;
+      }
+      .ant-table-scroll {
+        border-right: 1px solid #e9e9e9;
+        .ant-table-body {
+          border-left: 1px solid #e9e9e9;
+        }
+        table {
+          border-right: 0;
+        }
+      }
+      .ant-table-fixed-left {
+        table {
+          border-right: 1px solid #e9e9e9;
+        }
+      }
+      .commonPage {
+        // margin-top: 0;
+        // padding-top: 0;
+      }
+      .selfPagination {
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .commonPage {
+          padding-bottom: 0;
+          margin-top: 0;
+          ul {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    .tableTitle {
+      font-size: 14px;
+      color: #4a4a4a;
+      margin-left: 20px;
+    }
+  }
+  .emptyContent {
+    .emptyContent;
+  }
+}
